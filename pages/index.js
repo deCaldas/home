@@ -76,7 +76,15 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Diego is a JavaScript full-stack web developer based in Envigado with passion for the computing science. He is actually a beginner, however, he works with too much dedication to become a great developer. When he&apos;s not online, he loves to record your voice into the microphone.           
+          Today I want to introduce you to someone very special, someone who is passionate about web development and programming codes. He is an EcmaScript web developer and although he is still a newcomer to the world of programming, he has shown a great effort to learn and apply his knowledge.
+          <br />
+          In addition to his love for computer science, this person is also passionate about industrial research, digital marketing, and databases. And while he may seem like an odd combination, his ability to work in different areas allows you to have a broader perspective and a competitive advantage in his work.
+          <br />
+          But what impresses the most about this person is his dedication and commitment to what he does. He is always willing to learn something new, investigate and improve his skills, which makes him an excellent collaborator and a valuable asset to any work team.
+          <br />
+          It is certain that this person will continue to grow and develop in the world of programming and industrial research. If you are looking for someone who is passionate and committed in these areas, you should definitely meet them.
+          <br />
+          When he&apos;s not online, he loves to record your voice into the microphone singing songs.
         </Paragraph>
       </Section>
       <Section delay={0.2}>
