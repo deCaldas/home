@@ -94,6 +94,21 @@ const Navbar = props => {
            Blog
           </LinkItem>
 
+          <LinkItem
+            target="_blank"
+            href="https://gist.github.com/deCaldas/3caee4ae28a47cae84bd9eb582e3c038"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 1 }}
+            pl={2}
+          >Gist (LatAm)
+          </LinkItem>
+
+          
+
+          
+
         </Stack>
 
         <Box flex={1} align="right">
@@ -112,15 +127,23 @@ const Navbar = props => {
                   target="_blank"
                   as={Link}
                   href="https://gist.github.com/deCaldas"
-                >
-                  Source
+                >Source
                 </MenuItem>
                 <MenuItem
                 target="_blank"
                 as={Link}
                 href="https://info-tech-by-diego.blogspot.com/"
-                >
-                  Blog
+                >Blog
+                </MenuItem>
+                <MenuItem
+                  target="_blank"
+                  href="https://gist.github.com/deCaldas/3caee4ae28a47cae84bd9eb582e3c038"
+                  path={path}
+                  display="inline-flex"
+                  alignItems="center"
+                  style={{ gap: 1 }}
+                  pl={2}
+                >Gist (LatAm)
                 </MenuItem>
               </MenuList>
             </Menu>
