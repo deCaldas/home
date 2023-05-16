@@ -33,7 +33,6 @@ const Home = () => (
       >
         Hi there!! Over here exist a web developer living in Colombia.
       </Box>
-
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -70,7 +69,6 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
-
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
@@ -104,7 +102,6 @@ const Home = () => (
           Today debuting in the digital world...
         </BioSection>        
       </Section>
-
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           &#128152;
@@ -116,21 +113,18 @@ const Home = () => (
           </Link>          
         </Paragraph>
       </Section>
-
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Follow me on Twitter
         </Heading>
-        <List>
-          
+        <List>          
           <ListItem>
             <Link href="https://twitter.com/d_caldasCaridad" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
-              >
-                @d_caldasCaridad (LatAm)
+              >@d_caldasCaridad (LatAm)
               </Button>
             </Link>
           </ListItem>          
@@ -143,8 +137,7 @@ const Home = () => (
             rightIcon={<IoLogoLinkedin />}
             colorScheme="teal"
             onClick={() => window.open("https://www.linkedin.com/in/torocardo", "_blank")}
-            >
-              LinkedIn
+            >LinkedIn
             </Button>
           </Box>
       </Section>

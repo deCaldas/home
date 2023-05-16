@@ -42,8 +42,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-      
+      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}      
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
@@ -59,7 +58,6 @@ const Navbar = props => {
         <Heading as="h1" variant="title">
             De Caldas
           </Heading>
-
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -68,20 +66,17 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 1, md: 0 }}
         >
-          
           <LinkItem
             target="_blank"
-            href="https://gist.github.com/deCaldas"
+            href="https://gist.github.com/deCaldas/0bb8ef5ba499340f457338783aba481a"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 1 }}
             pl={2}
-          >
-            <IoLogoGithub />
+          ><IoLogoGithub />
            Source
           </LinkItem>
-
           <LinkItem
             target="_blank"
             href="https://info-tech-by-diego.blogspot.com/"
@@ -90,10 +85,8 @@ const Navbar = props => {
             alignItems="center"
             style={{ gap: 1 }}
             pl={2}
-          >
-           Blog
+          >Blog
           </LinkItem>
-
           <LinkItem
             target="_blank"
             href="https://gist.github.com/deCaldas/3caee4ae28a47cae84bd9eb582e3c038"
@@ -104,14 +97,10 @@ const Navbar = props => {
             pl={2}
           >Gist (LatAm)
           </LinkItem>
-
-          
-
-          
-
         </Stack>
 
         <Box flex={1} align="right">
+
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -122,11 +111,11 @@ const Navbar = props => {
                 variant="outline"
                 aria-label="Options"
               />
-              <MenuList>
+              <MenuList>                
                 <MenuItem
                   target="_blank"
                   as={Link}
-                  href="https://gist.github.com/deCaldas"
+                  href="https://gist.github.com/deCaldas/0bb8ef5ba499340f457338783aba481a"
                 >Source
                 </MenuItem>
                 <MenuItem
