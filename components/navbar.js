@@ -4,17 +4,14 @@ import {
   Box,
   Link,
   Stack,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
   useColorModeValue,
   Heading
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+/* **
+* import { HamburgerIcon } from '@chakra-ui/icons'
+* import { IoLogoGithub } from 'react-icons/io5' 
+** */
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -36,7 +33,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 }
 
 const Navbar = props => {
-  const { path } = props
+  const {} = props 
+  /* const { path } = props */
   return (
     <Box
       position="fixed"
