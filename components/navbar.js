@@ -56,8 +56,12 @@ const Navbar = props => {
         justify="space-between"
       >
         <Heading as="h1" variant="title">
-            De Caldas
-          </Heading>
+          <LinkItem
+            href="/"
+          >De Caldas
+          </LinkItem>
+        </Heading>
+
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -66,81 +70,44 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 1, md: 0 }}
         >
-          <LinkItem
-            target="_blank"
-            href="https://gist.github.com/deCaldas/0bb8ef5ba499340f457338783aba481a"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 1 }}
-            pl={2}
-          ><IoLogoGithub />
-           Source
-          </LinkItem>
-          <LinkItem
-            target="_blank"
-            href="https://info-tech-by-diego.blogspot.com/"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 1 }}
-            pl={2}
-          >Blog
-          </LinkItem>
-          <LinkItem
-            target="_blank"
-            href="https://gist.github.com/deCaldas/3caee4ae28a47cae84bd9eb582e3c038"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 1 }}
-            pl={2}
-          >Gist (LatAm)
-          </LinkItem>
+          {/* <IoLogoGithub />
+          <LinkItem href="/posts" path={path}>
+            Source (LatAm)
+          </LinkItem> */}
         </Stack>
 
-        <Box flex={1} align="right">
-
+{        <Box flex={1} align="right">
           <ThemeToggleButton />
-
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+            {/* Código para el menú desplegable...
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
-              />
-              <MenuList>                
+              /> 
+              <MenuList>                                
                 <MenuItem
                   target="_blank"
-                  as={Link}
-                  href="https://gist.github.com/deCaldas/0bb8ef5ba499340f457338783aba481a"
-                >Source
-                </MenuItem>
-                <MenuItem
-                target="_blank"
-                as={Link}
-                href="https://info-tech-by-diego.blogspot.com/"
-                >Blog
-                </MenuItem>
-                <MenuItem
-                  target="_blank"
-                  href="https://gist.github.com/deCaldas/3caee4ae28a47cae84bd9eb582e3c038"
+                  href="https://github.com/deCaldas"
                   path={path}
                   display="inline-flex"
                   alignItems="center"
                   style={{ gap: 1 }}
                   pl={2}
-                >Gist (LatAm)
+                >GitHub
                 </MenuItem>
-              </MenuList>
-            </Menu>
+              </MenuList> 
+            </Menu> 
+            */}
           </Box>
         </Box>
+}
       </Container>
     </Box>
   )
 }
 
 export default Navbar
+

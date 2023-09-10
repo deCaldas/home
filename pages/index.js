@@ -13,7 +13,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoTwitter, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -23,6 +23,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
+     
       <Box
         borderRadius="lg"
         mb={6}
@@ -33,6 +34,7 @@ const Home = () => (
       >
         Hi there!! Over here exist a web developer living in Colombia.
       </Box>
+     
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -56,7 +58,7 @@ const Home = () => (
             w="auto"
             h="auto"
             display="inline-block"
-                borderRadius="full"
+            borderRadius="full"
             overflow="hidden"
           >
             <ProfileImage
@@ -69,22 +71,22 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
+     
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
         <Paragraph>
-          Today I want to introduce you to someone very special, someone who is passionate about web development and programming codes. He is an EcmaScript web developer and although he is still a newcomer to the world of programming, he has shown a great effort to learn and apply his knowledge.
+          Let me introduce an exceptional professional who is passionate about web development and databases. Despite being a newcomer to the world of programming, he has shown remarkable dedication in learning and applying his knowledge.
           <br />
-          In addition to his love for computer science, this person is also passionate about industrial research, digital marketing, and databases. And while he may seem like an odd combination, his ability to work in different areas allows you to have a broader perspective and a competitive advantage in his work.
+          This professional is not only a trained web developer but also a data engineer.
           <br />
-          But what impresses the most about this person is his dedication and commitment to what he does. He is always willing to learn something new, investigate and improve his skills, which makes him an excellent collaborator and a valuable asset to any work team.
+          If you are looking for a valuable asset to any team in data engineering and or web development, you should definitely check him out.
           <br />
-          It is certain that this person will continue to grow and develop in the world of programming and industrial research. If you are looking for someone who is passionate and committed in these areas, you should definitely meet them.
-          <br />
-          When he&apos;s not online, he loves to record your voice into the microphone singing songs.
+          Outside of work, he enjoys recording his voice and singing songs when he&apos;s offline.
         </Paragraph>
       </Section>
+     
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
@@ -102,22 +104,22 @@ const Home = () => (
           Today debuting in the digital world...
         </BioSection>        
       </Section>
+     
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          &#128152;
+          Contact through social networks
         </Heading>
-        <Paragraph>
-          {' '}
-          <Link href="https://hiphopaite.blogspot.com/" target="_blank">
-          Hip Hop Art &amp; Rap Music (LatAm)
-          </Link>          
-        </Paragraph>
-      </Section>
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Follow me on Twitter
-        </Heading>
-        <List>          
+        <List>
+         <ListItem>
+            <Link href="https://github.com/deCaldas" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGithub />}
+                >GitHub
+              </Button>
+            </Link>
+          </ListItem>
           <ListItem>
             <Link href="https://twitter.com/d_caldasCaridad" target="_blank">
               <Button
@@ -127,20 +129,33 @@ const Home = () => (
               >@d_caldasCaridad (LatAm)
               </Button>
             </Link>
-          </ListItem>          
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/torocardo" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoLinkedin />}
+                >LinkedIn
+              </Button>
+            </Link>
+          </ListItem>
         </List>
-          <Heading as="h3" variant="section-title">
-            Contact me
-          </Heading>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          &#128152;
+        </Heading>
           <Box align="lefht" my={4}>
             <Button
-            rightIcon={<IoLogoLinkedin />}
             colorScheme="teal"
-            onClick={() => window.open("https://www.linkedin.com/in/torocardo", "_blank")}
-            >LinkedIn
+            onClick={() => window.open("https://hiphopaite.blogspot.com/", "_blank")}
+            >Hip Hop Art &amp; Rap Music (LatAm)
             </Button>
-          </Box>
+          </Box>        
       </Section>
+
     </Container>
   </Layout>
 )
