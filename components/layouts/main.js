@@ -1,8 +1,7 @@
-import React from 'react';
-import Head from 'next/head';
-import NavBar from '../navbar';
-import { Box, Container } from '@chakra-ui/react';
-import Footer from '../footer';
+import Head from 'next/head'
+import NavBar from '../navbar'
+import { Container } from '@chakra-ui/react'
+import Footer from '../footer'
 
 /**
  * Componente principal de la aplicación.
@@ -30,6 +29,7 @@ const Main = ({ children, router }) => {
         <meta property="og:site_name" content="Diego Toro" />
         <meta name="og:title" content="Diego Toro" />
         <meta property="og:type" content="website" />
+        
         <title>Diego Toro - Homepage</title>
       </Head>
 
@@ -43,7 +43,7 @@ const Main = ({ children, router }) => {
         <Footer />
       </Container>
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main
