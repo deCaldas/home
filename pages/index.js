@@ -32,7 +32,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hi there!! Over here exist a web developer living in Colombia.
+        Hi there!!
       </Box>
      
       <Box display={{ md: 'flex' }}>
@@ -40,9 +40,9 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Diego Toro Cárdenas
           </Heading>
-          <Paragraph>Entrepreneurship</Paragraph>
+          <Paragraph>Web Developer</Paragraph>
           <Heading as="h6" variant="caption">
-          [Artist | Researcher | Developer]
+          [Artist | Researcher | Entrepreneurship]
           </Heading>
         </Box>
         <Box
@@ -77,7 +77,7 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Let me introduce an exceptional professional who is passionate about web development and databases. Despite being a newcomer to the world of programming, he has shown remarkable dedication in learning and applying his knowledge.
+          Let me introduce an exceptional professional who is passionate about web development and databases.
           <br />
           This professional is not only a trained web developer but also a data engineer.
           <br />
@@ -93,7 +93,7 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>1984</BioYear>
-          Born in Antioquia. Colombia.
+          Born in Caldas Antioquia Colombia
         </BioSection>
         <BioSection>
           <BioYear>2011</BioYear>
@@ -105,6 +105,7 @@ const Home = () => (
         </BioSection>        
       </Section>
      
+{/* 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Contact through social networks
@@ -141,7 +142,7 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-      </Section>
+      </Section> */}
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
