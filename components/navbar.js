@@ -5,13 +5,15 @@ import {
   Link,
   Stack,
   useColorModeValue,
-  Heading
+  Heading,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  IconButton
 } from '@chakra-ui/react'
 import ThemeToggleButton from './theme-toggle-button'
-/* **
-* import { HamburgerIcon } from '@chakra-ui/icons'
-* import { IoLogoGithub } from 'react-icons/io5' 
-** */
+import { HamburgerIcon } from '@chakra-ui/icons'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -21,7 +23,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       as={NextLink}
       href={href}
       scroll={false}
-      p={2}
+      p={9}
       bg={active ? 'grassTeal' : undefined}
       color={active ? '#202023' : inactiveColor}
       target={target}
@@ -34,7 +36,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 
 const Navbar = props => {
   const {} = props 
-  /* const { path } = props */
   return (
     <Box
       position="fixed"
@@ -44,22 +45,20 @@ const Navbar = props => {
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
-    >
+      >
       <Container
         display="flex"
-        p={2}
         maxW="container.md"
         wrap="wrap"
         align="center"
         justify="space-between"
-      >
+        marginTop={1}
+        >
         <Heading as="h1" variant="title">
-          <LinkItem
-            href="/"
-          >De Caldas
+          <LinkItem href="/">
+            De Caldas
           </LinkItem>
         </Heading>
-
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -68,16 +67,28 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 1, md: 0 }}
         >
-          {/* <IoLogoGithub />
-          <LinkItem href="/posts" path={path}>
+          <LinkItem
+            flex ={1} 
+            borderRadius="lg"
+            mb={1}
+            p={1}
+            textAlign="center"
+            bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+            css={{ backdropFilter: 'blur(10px)' }}
+            href={"https://url-del-webDeveloperBlog.github.io/"}
+          >
+            Web Developer Blog (LatAm)
+          </LinkItem>
+          {/* ** Ejemplo para insertar Icono enlazado **
+            <LinkItem href="/posts" path={path}>
+            <IoLogoGithub />
             Source (LatAm)
-          </LinkItem> */}
+            </LinkItem> 
+          */}
         </Stack>
-
-{        <Box flex={1} align="right">
+        <Box flex={1} align="right">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            {/* Código para el menú desplegable...
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
@@ -85,27 +96,24 @@ const Navbar = props => {
                 variant="outline"
                 aria-label="Options"
               /> 
-              <MenuList>                                
+              <MenuList>
                 <MenuItem
                   target="_blank"
-                  href="https://github.com/deCaldas"
-                  path={path}
+                  href="https://url-del-webDeveloperBlog.github.io/"    
                   display="inline-flex"
                   alignItems="center"
                   style={{ gap: 1 }}
                   pl={2}
-                >GitHub
+                >
+                  Web Developer Blog
                 </MenuItem>
               </MenuList> 
             </Menu> 
-            */}
           </Box>
         </Box>
-}
       </Container>
     </Box>
   )
 }
 
 export default Navbar
-

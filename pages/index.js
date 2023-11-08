@@ -4,8 +4,8 @@ import {
   Heading,
   Box,
   Button,
-  List,
-  ListItem,
+  /* List,
+  ListItem, */
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
@@ -13,8 +13,9 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
+/* import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5' */
 import Image from 'next/image'
+/* import { ArrowRightIcon } from '@chakra-ui/icons' */
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -23,69 +24,114 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-     
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Hi there!!
-      </Box>
-     
       <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Diego Toro Cárdenas
-          </Heading>
-          <Paragraph>Web Developer</Paragraph>
-          <Heading as="h6" variant="caption">
-          [Artist | Researcher | Entrepreneurship]
-          </Heading>
+        <Box flexGrow={1}>            
+          <Box
+            flex={1} 
+            borderRadius="lg"
+            mb={1}
+            p={1}
+            textAlign="center"
+            bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+            css={{ backdropFilter: 'blur(10px)' }}
+            >
+          </Box>
+          <Heading as="h2" variant="page-title">Diego Toro Cárdenas</Heading>
+          <Paragraph>Full Stack JavaScript Web Developer</Paragraph>
+          <Heading as="h6" variant="caption">[Artist | Researcher | Entrepreneurship]</Heading>
+          {/* <Box
+            borderRadius="lg"
+            mb={6}
+            p={3}
+            textAlign="center"
+            bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+            css={{ backdropFilter: 'blur(10px)' }}
+            >
+          </Box> */}
         </Box>
         <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        >
-          <Box
-            borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
-            borderWidth={2}
-            borderStyle="solid"
-            w="auto"
-            h="auto"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
-          >
-            <ProfileImage
-              src="https://pbs.twimg.com/profile_images/1652848752455999488/NOwlzFAI_400x400.jpg"
-              alt="Profile image"
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            textAlign="center"
+            >
+            <Box
+              borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
+              borderWidth={2}
+              borderStyle="solid"
+              w="auto"
+              h="auto"
+              display="inline-block"
               borderRadius="full"
-              width="100"
-              height="100"
-            />
+              overflow="hidden"
+              >
+              <ProfileImage
+                src="https://pbs.twimg.com/profile_images/1652848752455999488/NOwlzFAI_400x400.jpg"
+                alt="Profile image"
+                borderRadius="full"
+                width="100"
+                height="100"
+                />
+            </Box>
           </Box>
-        </Box>
       </Box>
-     
+
+      <Section>
+      <Heading as="h3" variant="section-title">
+          Newsletter
+        </Heading>
+        <p>
+          Join me on a behind-the-scenes coding journey. Weekly updates on
+          projects, tutorials, and videos
+        </p>
+
+        <Box align="center" my={4}>
+          <Button
+            as="NextLink"
+            href="https://www.devas.life/"
+            scroll={false}
+            leftIcon="<EmailIcon />"
+            colorScheme="gray"
+          >
+            Sign up my newsletter here
+          </Button>
+        </Box>
+      </Section>
+
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
         <Paragraph>
-          Let me introduce an exceptional professional who is passionate about web development and databases.
-          <br />
-          This professional is not only a trained web developer but also a data engineer.
-          <br />
-          If you are looking for a valuable asset to any team in data engineering and or web development, you should definitely check him out.
-          <br />
-          Outside of work, he enjoys recording his voice and singing songs when he&apos;s offline.
+          Let me introduce an exceptional professional who is passionate about web development and databases. If you are looking for a valuable asset to any team in web development, you should definitely check him out. Outside of work, he enjoys recording his voice and singing songs when he&apos;s offline.
         </Paragraph>
       </Section>
+
+      <Box display={{ md: 'flex' }}>
+        <Heading>
+          &#128152; 
+        </Heading>
+          <Button
+            flex={1} 
+            align="right"
+            borderRadius="lg"
+            borderWidth={2}
+            borderStyle="solid"
+            mb={6}
+            p={3}
+            textAlign="center"
+            bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+            css={{ backdropFilter: 'blur(10px)' }}
+            onClick={() => window.open("https://hiphopaite.blogspot.com/", "_blank")}
+            >
+            <Link href="https://deCaldas.github.io/home" target="_blank">
+              Hip Hop Art &amp; Rap Music (LatAm)              
+            </Link>
+          </Button>
+        <Heading>
+          &#128152; 
+        </Heading>
+      </Box>
      
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
@@ -100,11 +146,10 @@ const Home = () => (
           He completed the Research Seed Program at the Furniture Technology Center. SENA Calatrava Itag&uuml;&iacute; Antioquia Colombia.          
         </BioSection>
         <BioSection>
-          <BioYear>2023</BioYear>
+          <BioYear>{`${new Date().getFullYear()}`}</BioYear>
           Today debuting in the digital world...
         </BioSection>        
-      </Section>
-     
+      </Section>     
 {/* 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -117,7 +162,7 @@ const Home = () => (
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
-                >GitHub
+                >@deCaldas
               </Button>
             </Link>
           </ListItem>
@@ -127,7 +172,7 @@ const Home = () => (
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
-              >@d_caldasCaridad (LatAm)
+              >@d_caldasCaridad
               </Button>
             </Link>
           </ListItem>
@@ -137,27 +182,14 @@ const Home = () => (
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoLinkedin />}
-                >LinkedIn
+                >@Diego Toro Cárdenas
               </Button>
             </Link>
           </ListItem>
         </List>
       </Section> */}
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          &#128152;
-        </Heading>
-          <Box align="lefht" my={4}>
-            <Button
-            colorScheme="teal"
-            onClick={() => window.open("https://hiphopaite.blogspot.com/", "_blank")}
-            >Hip Hop Art &amp; Rap Music (LatAm)
-            </Button>
-          </Box>        
-      </Section>
-
-    </Container>
+      
+    </Container>    
   </Layout>
 )
 
