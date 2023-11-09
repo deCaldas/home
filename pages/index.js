@@ -4,8 +4,6 @@ import {
   Heading,
   Box,
   Button,
-  /* List,
-  ListItem, */
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
@@ -13,7 +11,6 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-/* import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5' */
 import Image from 'next/image'
 /* import { ArrowRightIcon } from '@chakra-ui/icons' */
 
@@ -25,29 +22,10 @@ const Home = () => (
   <Layout>
     <Container>
       <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>            
-          <Box
-            flex={1} 
-            borderRadius="lg"
-            mb={1}
-            p={1}
-            textAlign="center"
-            bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-            css={{ backdropFilter: 'blur(10px)' }}
-            >
-          </Box>
-          <Heading as="h2" variant="page-title">Diego Toro Cárdenas</Heading>
+        <Box flexGrow={1}>
+          <Heading as="h2" variant="page-title">Diego Toro C&aacute;rdenas</Heading>
           <Paragraph>Full Stack JavaScript Web Developer</Paragraph>
           <Heading as="h6" variant="caption">[Artist | Researcher | Entrepreneurship]</Heading>
-          {/* <Box
-            borderRadius="lg"
-            mb={6}
-            p={3}
-            textAlign="center"
-            bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-            css={{ backdropFilter: 'blur(10px)' }}
-            >
-          </Box> */}
         </Box>
         <Box
             flexShrink={0}
@@ -75,29 +53,6 @@ const Home = () => (
             </Box>
           </Box>
       </Box>
-
-      <Section>
-      <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
-
-        <Box align="center" my={4}>
-          <Button
-            as="NextLink"
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon="<EmailIcon />"
-            colorScheme="gray"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box>
-      </Section>
-
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
@@ -106,7 +61,6 @@ const Home = () => (
           Let me introduce an exceptional professional who is passionate about web development and databases. If you are looking for a valuable asset to any team in web development, you should definitely check him out. Outside of work, he enjoys recording his voice and singing songs when he&apos;s offline.
         </Paragraph>
       </Section>
-
       <Box display={{ md: 'flex' }}>
         <Heading>
           &#128152; 
@@ -132,8 +86,7 @@ const Home = () => (
           &#128152; 
         </Heading>
       </Box>
-     
-      <Section delay={0.2}>
+        <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
@@ -143,53 +96,14 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2011</BioYear>
-          He completed the Research Seed Program at the Furniture Technology Center. SENA Calatrava Itag&uuml;&iacute; Antioquia Colombia.          
+          He completed the Research Seed Program at the CTM SENA Calatrava Itag&uuml;&iacute;.
         </BioSection>
         <BioSection>
           <BioYear>{`${new Date().getFullYear()}`}</BioYear>
           Today debuting in the digital world...
-        </BioSection>        
-      </Section>     
-{/* 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Contact through social networks
-        </Heading>
-        <List>
-         <ListItem>
-            <Link href="https://github.com/deCaldas" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoGithub />}
-                >@deCaldas
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/d_caldasCaridad" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >@d_caldasCaridad
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://www.linkedin.com/in/torocardo" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoLinkedin />}
-                >@Diego Toro Cárdenas
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
-      </Section> */}
-      
-    </Container>    
+        </BioSection>
+      </Section>
+    </Container>
   </Layout>
 )
 

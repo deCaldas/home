@@ -1,6 +1,5 @@
 import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
-import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 
 // Restaurar el scroll manualmente cuando sea aplicable
@@ -31,13 +30,7 @@ function Website({ Component, pageProps, router }) {
     <Chakra cookies={pageProps.cookies}>
       <Fonts />
       <Layout router={router}>
-        <AnimatePresence
-          mode="wait"
-          initial={true}
-          onExitComplete={handleExitComplete}
-        >
           <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
       </Layout>
     </Chakra>
   )
