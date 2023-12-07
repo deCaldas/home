@@ -23,7 +23,7 @@ const Home = () => (
     <Container>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">Diego Toro C&aacute;rdenas</Heading>
+          <Heading as="h2" variant="page-title">Diego Whiskey</Heading>
           <Paragraph>Full Stack JavaScript Web Developer</Paragraph>
           <Heading as="h6" variant="caption">[Artist | Researcher | Entrepreneurship]</Heading>
         </Box>
