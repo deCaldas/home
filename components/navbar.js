@@ -75,7 +75,7 @@ const Navbar = props => {
             textAlign="center"
             bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
             css={{ backdropFilter: 'blur(10px)' }}
-            href={"https://url-del-webDeveloperBlog.github.io/"}
+            href={"https://decaldas.github.io/webDeveloperBlog/"}
           >
             Web Developer Blog (LatAm)
           </LinkItem>
@@ -99,7 +99,7 @@ const Navbar = props => {
               <MenuList>
                 <MenuItem
                   target="_blank"
-                  href="https://url-del-webDeveloperBlog.github.io/"    
+                  href="https://decaldas.github.io/webDeveloperBlog/"
                   display="inline-flex"
                   alignItems="center"
                   style={{ gap: 1 }}
