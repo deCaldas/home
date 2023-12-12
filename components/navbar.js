@@ -77,7 +77,7 @@ const Navbar = props => {
             css={{ backdropFilter: 'blur(10px)' }}
             href={"https://decaldas.github.io/webDeveloperBlog/"}
           >
-            Web Developer Blog (LatAm)
+            Web Developer Blog
           </LinkItem>
           {/* ** Ejemplo para insertar Icono enlazado **
             <LinkItem href="/posts" path={path}>

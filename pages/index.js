@@ -78,7 +78,7 @@ const Home = () => (
             css={{ backdropFilter: 'blur(10px)' }}
             onClick={() => window.open("https://hiphopaite.blogspot.com/", "_blank")}
             >
-            <Link href="https://deCaldas.github.io/home" target="_blank">
+            <Link>
               Hip Hop Art &amp; Rap Music (LatAm)              
             </Link>
           </Button>
