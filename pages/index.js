@@ -79,7 +79,7 @@ const Home = () => (
             onClick={() => window.open("https://hiphopaite.blogspot.com/", "_blank")}
             >
             <Link>
-              Hip Hop Art &amp; Rap Music (LatAm)              
+              Hip Hop Art &amp; Rap Music
             </Link>
           </Button>
         <Heading>
