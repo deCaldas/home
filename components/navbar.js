@@ -97,15 +97,19 @@ const Navbar = props => {
                 aria-label="Options"
               /> 
               <MenuList>
-                <MenuItem
-                  target="_blank"
-                  href="https://decaldas.github.io/webDeveloperBlog/"
-                  display="inline-flex"
-                  alignItems="center"
-                  style={{ gap: 1 }}
-                  pl={2}
-                >
-                  Web Developer Blog
+                <MenuItem                >
+                  <LinkItem
+                    flex ={1} 
+                    borderRadius="lg"
+                    mb={1}
+                    p={1}
+                    textAlign="center"
+                    bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+                    css={{ backdropFilter: 'blur(10px)' }}
+                    href={"https://decaldas.github.io/webDeveloperBlog/"}
+                    >
+                      Web Developer Blog
+                  </LinkItem>
                 </MenuItem>
               </MenuList> 
             </Menu> 
