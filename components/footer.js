@@ -13,14 +13,14 @@ const Footer = () => {
           <a href="https://twitter.com/d_caldasCaridad" target="_blank">
             <IoLogoTwitter />
           </a>
-          <a href="https://www.linkedin.com/in/torocardo" target="_blank">
+          <a href="https://www.linkedin.com/in/diegowhiskey" target="_blank">
             <IoLogoLinkedin />              
           </a>
         </div>
       </Heading>
       <div>
         <div style={{display: 'inline-flex'}}>
-          <Link href="https://decaldas.github.io/wCsJS/">
+          <Link href="https://decaldas.github.io/wCsJS/" target='_blank'>
             {" De Caldas "}
           </Link>
           {` • `}
