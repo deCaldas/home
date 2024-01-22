@@ -67,7 +67,7 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 1, md: 0 }}
         >
-          <LinkItem
+          {/*<LinkItem
             flex ={1} 
             borderRadius="lg"
             mb={1}
@@ -79,7 +79,8 @@ const Navbar = props => {
           >
             Web Developer Blog
           </LinkItem>
-          {/* ** Ejemplo para insertar Icono enlazado **
+          
+          ** Ejemplo para insertar Icono enlazado **
             <LinkItem href="/posts" path={path}>
             <IoLogoGithub />
             Source (LatAm)
@@ -90,13 +91,13 @@ const Navbar = props => {
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
-              <MenuButton
+            {/* <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
               /> 
-              <MenuList>
+               <MenuList>
                 <MenuItem                >
                   <LinkItem
                     flex ={1} 
@@ -111,10 +112,10 @@ const Navbar = props => {
                       Web Developer Blog
                   </LinkItem>
                 </MenuItem>
-              </MenuList> 
+              </MenuList> */}
             </Menu> 
           </Box>
-        </Box>
+        </Box> 
       </Container>
     </Box>
   )

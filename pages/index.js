@@ -24,8 +24,8 @@ const Home = () => (
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">Diego Whiskey</Heading>
-          <Paragraph>Full Stack JavaScript Web Developer</Paragraph>
-          <Heading as="h6" variant="caption">[Artist | Researcher | Entrepreneurship]</Heading>
+          <Paragraph>[ Entrepreneurship | Researcher | Artist ]</Paragraph>
+          <Heading as="h6" variant="caption">Full Stack web Developer with Specialization in JavaScript and Data Engineering</Heading>
         </Box>
         <Box
             flexShrink={0}
