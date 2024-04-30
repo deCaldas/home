@@ -1,37 +1,39 @@
 {
-    "name":"homepage",
-    "version":"1.0.0",
-    "description":"Diego's website",
-    "scripts":
-    {
-        "dev":"next dev -H 0.0.0.0",
-        "build":"next build",
-        "prettier":"prettier --write .",
-        "lint":"next lint"
-    },
-    "keywords":
-    [
-
-    ],
-    "author":"Diego Toro Cárdenas",
-    "license":"MIT",
-    "dependencies":
-    {
-        "@chakra-ui/icons":"^2.0.15",
-        "@chakra-ui/react":"^2.4.6",
-        "@emotion/react":"^11.10.5",
-        "@emotion/styled":"^11.10.5",
-        "next":"^13.1.1",
-        "react":"^18.2.0",
-        "react-dom":"^18.2.0",
-        "react-icons":"^4.7.1"
-    },
-    "devDependencies":
-    {
-        "autoprefixer":"^10.4.16",
-        "eslint":"^8.31.0",
-        "eslint-config-next":"^13.1.1",
-        "postcss":"^8.4.31",
-        "prettier":"^2.8.2"
-    }
+  "name": "homepage",
+  "version": "2.2.13",
+  "description": "Diego's Website",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier --write .",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "Homepage",
+    "Next.js",
+    "React.js",
+    "JavaScript",
+    "Git & GitHub",
+    "Web Developer"
+  ],
+  "author": "Takuya Matsuyama",
+  "clone editor": "Diego Whiskey",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "2.0.15",
+    "@chakra-ui/react": "2.4.6",
+    "@emotion/react": "11.10.5",
+    "@emotion/styled": "11.10.5",
+    "next": "13.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.16",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "postcss": "8.4.31",
+    "prettier": "2.8.2"
+  }
 }
