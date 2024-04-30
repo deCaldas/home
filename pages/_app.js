@@ -30,7 +30,7 @@ function Website({ Component, pageProps, router }) {
     <Chakra cookies={pageProps.cookies}>
       <Fonts />
       <Layout router={router}>
-          <Component {...pageProps} key={router.route} />
+        <Component {...pageProps} key={router.route} />
       </Layout>
     </Chakra>
   )

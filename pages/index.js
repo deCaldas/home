@@ -28,30 +28,30 @@ const Home = () => (
           <Heading as="h6" variant="caption">Full Stack web Developer with Specialization in JavaScript and Data Engineering</Heading>
         </Box>
         <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 6 }}
-            textAlign="center"
-            >
-            <Box
-              borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
-              borderWidth={2}
-              borderStyle="solid"
-              w="auto"
-              h="auto"
-              display="inline-block"
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 6 }}
+          textAlign="center"
+        >
+          <Box
+            borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
+            borderWidth={2}
+            borderStyle="solid"
+            w="auto"
+            h="auto"
+            display="inline-block"
+            borderRadius="full"
+            overflow="hidden"
+          >
+            <ProfileImage
+              src="https://pbs.twimg.com/profile_images/1652848752455999488/NOwlzFAI_400x400.jpg"
+              alt="Profile image"
               borderRadius="full"
-              overflow="hidden"
-              >
-              <ProfileImage
-                src="https://pbs.twimg.com/profile_images/1652848752455999488/NOwlzFAI_400x400.jpg"
-                alt="Profile image"
-                borderRadius="full"
-                width="100"
-                height="100"
-                />
-            </Box>
+              width="100"
+              height="100"
+            />
           </Box>
+        </Box>
       </Box>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
@@ -63,10 +63,9 @@ const Home = () => (
       </Section>
       <Box display={{ md: 'flex' }}>
         <Heading>
-          &#128152; 
-        </Heading>
+          &#128152;
           <Button
-            flex={1} 
+            flex={1}
             align="right"
             borderRadius="lg"
             borderWidth={2}
@@ -76,17 +75,15 @@ const Home = () => (
             textAlign="center"
             bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
             css={{ backdropFilter: 'blur(10px)' }}
-            onClick={() => window.open("https://hiphopaite.blogspot.com/", "_blank")}
-            >
+            onClick={() => window.open("https://aite-artistadelhiphop.blogspot.com/", "_blank")}
+          >
             <Link>
               Hip Hop Art &amp; Rap Music
             </Link>
           </Button>
-        <Heading>
-          &#128152; 
         </Heading>
       </Box>
-        <Section delay={0.2}>
+      <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
