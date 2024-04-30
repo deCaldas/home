@@ -21,14 +21,17 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Diego's homepage" />
         <meta name="author" content="Takuya Matsuyama" />
-        <meta name="clone-editor" content="Diego Toro" />
+        <meta name="clone-editor" content="Diego Whiskey" />
         <link rel="icon" type="url" href="https://pbs.twimg.com/media/FlFT-KJWIAADq21?format=webp&name=tiny" />
+        <meta name="twitter:title" content="Diego Whiskey" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@d_caldasCaridad" />
         <meta name="twitter:creator" content="@d_caldasCaridad" />
-        <meta property="og:site_name" content="Diego Toro" />
-        <meta name="og:title" content="Diego Toro" />
+        <meta name="twitter:image" content="https://pbs.twimg.com/media/FlFT-KJWIAADq21?format=webp&name=tiny" />
+        <meta property="og:site_name" content="Diego Whiskey" />
+        <meta name="og:title" content="Diego Whiskey" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://pbs.twimg.com/media/FlFT-KJWIAADq21?format=webp&name=tiny" />
         <title>Diego&apos;s Homepage</title>
       </Head>
       <NavBar path={router.asPath} />

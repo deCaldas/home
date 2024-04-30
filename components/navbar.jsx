@@ -1,3 +1,5 @@
+import { forwardRef } from 'react'
+import Logo from './logo'
 import NextLink from 'next/link'
 import {
   Container,
@@ -10,10 +12,12 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-  IconButton
+  IconButton,
+  Flex
 } from '@chakra-ui/react'
 import ThemeToggleButton from './theme-toggle-button'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import Job from './jobtitle'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -34,18 +38,22 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   )
 }
 
+const MenuLink = forwardRef((props, ref) => (
+  <Link ref={ref} as={NextLink} {...props} />
+))
+
 const Navbar = props => {
-  const {} = props 
+  const { } = props
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}      
+      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
-      >
+    >
       <Container
         display="flex"
         maxW="container.md"
@@ -53,12 +61,13 @@ const Navbar = props => {
         align="center"
         justify="space-between"
         marginTop={1}
-        >
-        <Heading as="h1" variant="title">
-          <LinkItem href="/">
-            De Caldas
-          </LinkItem>
-        </Heading>
+      >
+        <Flex align="center" mr={5}>
+
+          <Heading as="h1" variant="title">
+            <Job />
+          </Heading>
+        </Flex>
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -91,16 +100,16 @@ const Navbar = props => {
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
-            {/* <MenuButton
+              <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
-              /> 
-               <MenuList>
+              />
+              <MenuList>
                 <MenuItem                >
                   <LinkItem
-                    flex ={1} 
+                    flex={1}
                     borderRadius="lg"
                     mb={1}
                     p={1}
@@ -108,14 +117,14 @@ const Navbar = props => {
                     bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
                     css={{ backdropFilter: 'blur(10px)' }}
                     href={"https://decaldas.github.io/webDeveloperBlog/"}
-                    >
-                      Web Developer Blog
+                  >
+                    Web Developer Blog
                   </LinkItem>
                 </MenuItem>
-              </MenuList> */}
-            </Menu> 
+              </MenuList>
+            </Menu>
           </Box>
-        </Box> 
+        </Box>
       </Container>
     </Box>
   )

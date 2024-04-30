@@ -1,12 +1,6 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 
-const variants = {
-  hidden: { opacity: 0, x: 0, y: 20 },
-  enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: 20 }
-}
-
 /**
  * Componente de diseño general para páginas.
  *
@@ -18,9 +12,16 @@ const variants = {
  * @param {ReactNode} props.children - Los elementos secundarios a renderizar dentro del componente.
  * @returns {JSX.Element} - El componente de diseño de la página.
  */
-const Layout = ({ children, title }) => {
-  const pageTitle = title ? `${title} - Diego Toro` : 'Diego Toro';
 
+const variants = {
+  hidden: { opacity: 0, x: 0, y: 20 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: -0, y: 20 }
+}
+
+const Layout = ({ children, title }) => {
+  const t = `${title} - De Caldas`
+  /*   const pageTitle = title ? `${title} - Diego Whiskey` : 'Diego Whiskey'; */
   return (
     <motion.article
       initial="hidden"
@@ -30,14 +31,16 @@ const Layout = ({ children, title }) => {
       transition={{ duration: 0.4, type: 'easeInOut' }}
       style={{ position: 'relative' }}
     >
-      {title && (
-        <Head>
-          <title>{pageTitle}</title>
-          <meta name="twitter:title" content={pageTitle} />
-          <meta property="og:title" content={pageTitle} />
-        </Head>
-      )}
-      {children}
+      <>
+        {title && (
+          <Head>
+            <title>{t}</title>
+            <meta name="twitter:title" content={t} />
+            <meta property="og:title" content={t} />
+          </Head>
+        )}
+        {children}
+      </>
     </motion.article>
   )
 }
