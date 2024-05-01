@@ -1,5 +1,4 @@
 import { forwardRef } from 'react'
-import Logo from './logo'
 import NextLink from 'next/link'
 import {
   Container,
@@ -17,7 +16,7 @@ import {
 } from '@chakra-ui/react'
 import ThemeToggleButton from './theme-toggle-button'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import Job from './jobtitle'
+import JobTitle from './jobtitle'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -63,9 +62,8 @@ const Navbar = props => {
         marginTop={1}
       >
         <Flex align="center" mr={5}>
-
           <Heading as="h1" variant="title">
-            <Job />
+            <JobTitle />
           </Heading>
         </Flex>
         <Stack
@@ -76,25 +74,14 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 1, md: 0 }}
         >
-          {/*<LinkItem
-            flex ={1} 
+          <LinkItem
             borderRadius="lg"
             mb={1}
             p={1}
-            textAlign="center"
-            bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-            css={{ backdropFilter: 'blur(10px)' }}
-            href={"https://decaldas.github.io/webDeveloperBlog/"}
+            href={"/development"}
           >
-            Web Developer Blog
+            Development
           </LinkItem>
-          
-          ** Ejemplo para insertar Icono enlazado **
-            <LinkItem href="/posts" path={path}>
-            <IoLogoGithub />
-            Source (LatAm)
-            </LinkItem> 
-          */}
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
@@ -107,19 +94,16 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem                >
-                  <LinkItem
-                    flex={1}
-                    borderRadius="lg"
-                    mb={1}
-                    p={1}
-                    textAlign="center"
-                    bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-                    css={{ backdropFilter: 'blur(10px)' }}
-                    href={"https://decaldas.github.io/webDeveloperBlog/"}
-                  >
-                    Web Developer Blog
-                  </LinkItem>
+                <MenuItem as={MenuLink} href={"/development"}
+                  flex={1}
+                  borderRadius="lg"
+                  mb={1}
+                  p={1}
+                  textAlign="center"
+                  bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+                  css={{ backdropFilter: 'blur(10px)' }}
+                >
+                  Jobs
                 </MenuItem>
               </MenuList>
             </Menu>

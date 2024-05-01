@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
-const JobTitle = styled.span`
+const JobBox = styled.span`
   font-weight: bold;
   font-size: 18px;
   display: inline-flex;
@@ -10,33 +10,25 @@ const JobTitle = styled.span`
   height: 30px;
   line-height: 20px;
   padding: 10px;
-
-  > svg {
-    transition: 200ms ease;
-  }
-
-  &:hover > svg {
-    transform: rotate(20deg);
-  }
 `
 
-const Job = () => {
-    return (
-        (<Link href="/" scroll={false}>
+const JobTitle = () => {
+  return (
+    (<Link href="/" scroll={false}>
 
-            <JobTitle>
-                <Text
-                    color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                    fontFamily='M PLUS Rounded 1c", sans-serif'
-                    fontWeight="bold"
-                    ml={3}
-                >
-                    Web Developer
-                </Text>
-            </JobTitle>
+      <JobBox>
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='M PLUS Rounded 1c", sans-serif'
+          fontWeight="bold"
+          ml={3}
+        >
+          Web Developer
+        </Text>
+      </JobBox>
 
-        </Link>)
-    );
+    </Link>)
+  );
 }
 
-export default Job
+export default JobTitle
