@@ -1,4 +1,3 @@
-import { forwardRef } from 'react'
 import NextLink from 'next/link'
 import {
   Container,
@@ -37,12 +36,12 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   )
 }
 
-const MenuLink = forwardRef((props, ref) => (
+const MenuLink = Object.assign((props, ref) => (
   <Link ref={ref} as={NextLink} {...props} />
 ))
 
 const Navbar = props => {
-  const { } = props
+  const {} = props
   return (
     <Box
       position="fixed"
@@ -74,13 +73,8 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 1, md: 0 }}
         >
-          <LinkItem
-            borderRadius="lg"
-            mb={1}
-            p={1}
-            href={"/development"}
-          >
-            Development
+          <LinkItem borderRadius="lg" mb={1} p={1} href={'/portfolio'}>
+            Portfolio
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
@@ -94,7 +88,9 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={MenuLink} href={"/development"}
+                <MenuItem
+                  as={MenuLink}
+                  href={'/portfolio'}
                   flex={1}
                   borderRadius="lg"
                   mb={1}
