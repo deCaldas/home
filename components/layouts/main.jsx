@@ -22,16 +22,26 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Diego's homepage" />
         <meta name="author" content="Takuya Matsuyama" />
         <meta name="clone-editor" content="Diego Whiskey" />
-        <link rel="icon" type="url" href="https://pbs.twimg.com/media/FlFT-KJWIAADq21?format=webp&name=tiny" />
+        <link
+          rel="icon"
+          type="url"
+          href="https://github.com/deCaldas/home/blob/main/public/og/opengraph-imalogo.png"
+        />
         <meta name="twitter:title" content="Diego Whiskey" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@d_caldasCaridad" />
         <meta name="twitter:creator" content="@d_caldasCaridad" />
-        <meta name="twitter:image" content="https://pbs.twimg.com/media/FlFT-KJWIAADq21?format=webp&name=tiny" />
+        <meta
+          name="twitter:image"
+          content="https://github.com/deCaldas/home/blob/main/public/og/opengraph-imalogo.png"
+        />
         <meta property="og:site_name" content="Diego Whiskey" />
         <meta name="og:title" content="Diego Whiskey" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://pbs.twimg.com/media/FlFT-KJWIAADq21?format=webp&name=tiny" />
+        <meta
+          property="og:image"
+          content="https://github.com/deCaldas/home/blob/main/public/og/opengraph-imalogo.png"
+        />
         <title>Diego&apos;s Homepage</title>
       </Head>
       <NavBar path={router.asPath} />

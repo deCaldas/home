@@ -8,10 +8,18 @@ const Footer = () => {
     <Box align="center" opacity={0.4} fontSize="sm">
       <Heading>
         <div style={{ display: 'inline-flex' }}>
-          <a href="https://github.com/deCaldas" target="_blank">
+          <a
+            href="https://github.com/deCaldas"
+            target="_blank"
+            rel="noreferrer"
+          >
             <IoLogoGithub />
           </a>
-          <a href="https://twitter.com/d_caldasCaridad" target="_blank">
+          <a
+            href="https://twitter.com/d_caldasCaridad"
+            target="_blank"
+            rel="noreferrer"
+          >
             <IoLogoTwitter />
           </a>
         </div>
@@ -19,8 +27,6 @@ const Footer = () => {
       <Logo />
       <div>
         <div style={{ display: 'inline-flex' }}>
-          <Link href="https://decaldas.github.io/wCsJS/" target='_blank'>
-          </Link>
           &copy;
           {` • `}
           {`${new Date().getFullYear()}`}
@@ -31,7 +37,10 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        This website is built based on the <a href='https://www.craftz.dog/' target='_blank'>Takuya Matsuyama&apos;s website</a>
+        This website is built based on the{' '}
+        <a href="https://www.craftz.dog/" target="_blank" rel="noreferrer">
+          Takuya Matsuyama&apos;s website
+        </a>
       </div>
     </Box>
   )

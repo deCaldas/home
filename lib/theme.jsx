@@ -21,18 +21,18 @@ const components = {
         marginTop: 3,
         marginBottom: 4
       },
-      "caption": {
+      caption: {
         fontSize: 16,
         marginTop: 3,
         marginBottom: 4
       },
-      "title": {
+      title: {
         fontSize: 23,
         marginTop: 3,
         marginBottom: 4,
         marginLeft: 3,
         marginRight: 7,
-        textDecoration: 'none',
+        textDecoration: 'none'
       }
     }
   },
