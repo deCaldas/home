@@ -1,6 +1,6 @@
 {
   "name": "homepage",
-  "version": "2.2.13",
+  "version": "2.3.13",
   "description": "Diego's Website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",

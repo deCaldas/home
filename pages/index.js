@@ -5,7 +5,6 @@ import {
   Container,
   Heading,
   Box,
-  Button,
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
@@ -16,7 +15,6 @@ import Section from '../components/section'
 import Image from 'next/image'
 import { Meta } from '../components/jobsTemplate'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-/* import { ArrowRightIcon } from '@chakra-ui/icons' */
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)

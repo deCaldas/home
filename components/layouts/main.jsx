@@ -33,14 +33,14 @@ const Main = ({ children, router }) => {
         <meta name="twitter:creator" content="@d_caldasCaridad" />
         <meta
           name="twitter:image"
-          content="https://pbs.twimg.com/media/FlFT-KJWIAADq21?format=webp&name=tiny"
+          content="https://github.com/deCaldas/home/blob/main/public/og/opengraph-imalogo.png"
         />
         <meta property="og:site_name" content="Diego Whiskey" />
         <meta name="og:title" content="Diego Whiskey" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://pbs.twimg.com/media/FlFT-KJWIAADq21?format=webp&name=tiny"
+          content="https://github.com/deCaldas/home/blob/main/public/og/opengraph-imalogo.png"
         />
         <title>Diego&apos;s Homepage</title>
       </Head>
