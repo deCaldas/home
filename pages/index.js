@@ -27,9 +27,14 @@ const Home = () => (
     <Container>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">Diego Whiskey</Heading>
+          <Heading as="h2" variant="page-title">
+            Diego Whiskey
+          </Heading>
           <Paragraph>[ Entrepreneurship | Researcher | Artist ]</Paragraph>
-          <Heading as="h6" variant="caption">Full Stack web Developer with Specialization in JavaScript and Data Engineering</Heading>
+          <Heading as="h6" variant="caption">
+            Full Stack web Developer with Specialization in JavaScript and Data
+            Engineering
+          </Heading>
         </Box>
         <Box
           flexShrink={0}
@@ -62,11 +67,15 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Let me introduce an exceptional professional who is passionate about web development and databases. If you are looking for a valuable asset to any team in web development, you should definitely check him out. Outside of work, he enjoys recording his voice and singing songs when he&apos;s offline.
+          Let me introduce an exceptional professional who is passionate about
+          web development and databases. If you are looking for a valuable asset
+          to any team in web development, you should definitely check him out.
+          Outside of work, he enjoys recording his voice and singing songs when
+          he&apos;s offline.
         </Paragraph>
       </Section>
-      <Box display={{ md: 'flex' }}
-
+      <Box
+        display={{ md: 'flex' }}
         align="right"
         borderRadius="lg"
         borderWidth={2}
@@ -77,16 +86,20 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        <Heading>
-          &#128152;
+        <Heading>&#128152;</Heading>
+        <Heading as="h5" variant="caption">
+          Hip Hop Art &amp; Rap Music
         </Heading>
-        <Heading as="h5" variant="caption">Hip Hop Art &amp; Rap Music</Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Blogpost</Meta>
-            <Link href="https://aite-artistadelhiphop.blogspot.com/2024/04/cantante-de-rap-profesional-tech.html" target='_blank'>
+            <Link
+              href="https://aite-artistadelhiphop.blogspot.com/2024/04/cantante-de-rap-profesional-tech.html"
+              target="_blank"
+            >
               De Las Calles Al Data Center <br />
-              Una Odisea Desde El Hip Hop Hasta La Ingeniería De Datos <ExternalLinkIcon mx="2px" />
+              Una Odisea Desde El Hip Hop Hasta La Ingeniería De Datos{' '}
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
@@ -101,7 +114,8 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2011</BioYear>
-          He completed the Research Seed Program at the CTM SENA Calatrava Itag&uuml;&iacute;.
+          He completed the Research Seed Program at the CTM SENA Calatrava
+          Itag&uuml;&iacute;.
         </BioSection>
         <BioSection>
           <BioYear>{`${new Date().getFullYear()}`}</BioYear>

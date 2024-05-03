@@ -10,19 +10,24 @@ import blogs from '../public/images/jobs/deCaldas-blogsProject.png'
 import webPage from '../public/images/jobs/network-contact.png'
 
 const Development = () => (
-    <Layout title="portfolio">
-        <Container>
-            <Heading as="h3" fontSize={20} mb={4}>
-                Jobs
-            </Heading>
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                <Section delay={0.1}>
-                    <WorkGridItem id="reveal_js" title="Serautos FT" thumbnail={reveal_js}>
-                        The website of a passenger transport company. This site was made with the technology of reveal.js.
-                    </WorkGridItem>
-                </Section>
-            </SimpleGrid>
-            {/*             <Heading as="h3" fontSize={20} mb={4}>
+  <Layout title="portfolio">
+    <Container>
+      <Heading as="h3" fontSize={20} mb={4}>
+        Jobs
+      </Heading>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="reveal_js"
+            title="Serautos FT"
+            thumbnail={reveal_js}
+          >
+            The website of a passenger transport company. This site was made
+            with the technology of reveal.js.
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+      {/*             <Heading as="h3" fontSize={20} mb={4}>
                 Projects
             </Heading>
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -42,19 +47,24 @@ const Development = () => (
                     </WorkGridItem>
                 </Section>
             </SimpleGrid> */}
-            <Heading as="h3" fontSize={20} mb={4}>
-                Networking
-            </Heading>
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                <Section delay={0.1}>
-                    <WorkGridItem id="webPage" title="Network Contacts" thumbnail={webPage}>
-                        Web pages to my friends. This page is made possible by Next.js and Chakra UI.
-                    </WorkGridItem>
-                </Section>
-            </SimpleGrid>
-        </Container>
-    </Layout>
+      <Heading as="h3" fontSize={20} mb={4}>
+        Networking
+      </Heading>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="webPage"
+            title="Network Contacts"
+            thumbnail={webPage}
+          >
+            Web pages to my friends. This page is made possible by Next.js and
+            Chakra UI.
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+    </Container>
+  </Layout>
 )
 
 export default Development
-export { getServerSideProps } from '../components/chakra'
+export { getStaticProps } from '../components/chakra'

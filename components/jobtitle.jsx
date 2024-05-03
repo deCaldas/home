@@ -14,8 +14,7 @@ const JobBox = styled.span`
 
 const JobTitle = () => {
   return (
-    (<Link href="/" scroll={false}>
-
+    <Link href="/" scroll={false}>
       <JobBox>
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
@@ -26,9 +25,8 @@ const JobTitle = () => {
           Web Developer
         </Text>
       </JobBox>
-
-    </Link>)
-  );
+    </Link>
+  )
 }
 
 export default JobTitle
