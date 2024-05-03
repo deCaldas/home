@@ -78,9 +78,9 @@ const Navbar = props => {
             borderRadius="lg"
             mb={1}
             p={1}
-            href={"/development"}
+            href={"/portfolio"}
           >
-            Development
+            Portfolio
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
@@ -94,7 +94,7 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={MenuLink} href={"/development"}
+                <MenuItem as={MenuLink} href={"/portfolio"}
                   flex={1}
                   borderRadius="lg"
                   mb={1}
