@@ -6,7 +6,8 @@ import {
   Heading,
   Box,
   useColorModeValue,
-  chakra
+  chakra,
+  AspectRatio
 } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -15,6 +16,7 @@ import Section from '../components/section'
 import Image from 'next/image'
 import { Meta } from '../components/jobsTemplate'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import MatrixRain from '../components/MatrixRain'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -32,6 +34,9 @@ const Home = () => (
       bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
       css={{ backdropFilter: 'blur(3px)' }}
     >
+      <AspectRatio ratio={1.7} my={4}>
+        <MatrixRain />
+      </AspectRatio>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
