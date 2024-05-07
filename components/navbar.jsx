@@ -16,6 +16,7 @@ import {
 import ThemeToggleButton from './theme-toggle-button'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import JobTitle from './jobtitle'
+import { MenuLink } from './MenuLink'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -35,10 +36,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     </Link>
   )
 }
-
-const MenuLink = Object.assign((props, ref) => (
-  <Link ref={ref} as={NextLink} {...props} />
-))
 
 const Navbar = props => {
   const {} = props
@@ -60,6 +57,7 @@ const Navbar = props => {
         justify="space-between"
         marginTop={1}
       >
+        {/* <Box flex={1} align="left" mt={3}><HeartButton /></Box> */}
         <Flex align="center" mr={5}>
           <Heading as="h1" variant="title">
             <JobTitle />
@@ -99,7 +97,7 @@ const Navbar = props => {
                   bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
                   css={{ backdropFilter: 'blur(10px)' }}
                 >
-                  Jobs
+                  Portfolio
                 </MenuItem>
               </MenuList>
             </Menu>

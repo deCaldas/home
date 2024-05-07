@@ -4,21 +4,23 @@ import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
-    <LinkBox cursor="pointer">
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        placeholder="blur"
-        loading="lazy"
-      />
-      <LinkOverlay href={href}>
-        <Text mt={2}>{title}</Text>
-      </LinkOverlay>
-      <Text fontSize={14}>{children}</Text>
-    </LinkBox>
-  </Box>
+  <>
+    <Box w="100%" textAlign="center">
+      <LinkBox cursor="pointer">
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          placeholder="blur"
+          loading="lazy"
+        />
+        <LinkOverlay href={href}>
+          <Text mt={2}>{title}</Text>
+        </LinkOverlay>
+        <Text fontSize={14}>{children}</Text>
+      </LinkBox>
+    </Box>
+  </>
 )
 
 export const WorkGridItem = ({
@@ -42,7 +44,7 @@ export const WorkGridItem = ({
         placeholder="blur"
       />
       <LinkOverlay as="div" href={`/${category}/${id}`}>
-        <Text mt={2} fontSize={20}>
+        <Text mt={3} fontSize={23}>
           {title}
         </Text>
       </LinkOverlay>

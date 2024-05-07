@@ -21,7 +21,6 @@ const variants = {
 
 const Layout = ({ children, title }) => {
   const t = `${title} - De Caldas`
-  /*   const pageTitle = title ? `${title} - Diego Whiskey` : 'Diego Whiskey'; */
   return (
     <motion.article
       initial="hidden"

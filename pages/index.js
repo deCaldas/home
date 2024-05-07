@@ -22,7 +22,16 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Container>
+    <Container
+      marginTop="73px"
+      marginBottom="23px"
+      borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
+      borderRadius="lg"
+      borderWidth={2}
+      borderStyle="solid"
+      bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+      css={{ backdropFilter: 'blur(3px)' }}
+    >
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -36,11 +45,12 @@ const Home = () => (
         </Box>
         <Box
           flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
+          mt={{ base: 3, md: 0 }}
+          ml={{ md: 7 }}
           textAlign="center"
         >
           <Box
+            marginTop="23px"
             borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             borderWidth={2}
             borderStyle="solid"
@@ -75,6 +85,7 @@ const Home = () => (
       <Box
         display={{ md: 'flex' }}
         align="right"
+        borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
         borderRadius="lg"
         borderWidth={2}
         borderStyle="solid"
@@ -82,7 +93,7 @@ const Home = () => (
         p={3}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-        css={{ backdropFilter: 'blur(10px)' }}
+        css={{ backdropFilter: 'blur(7px)' }}
       >
         <Heading>&#128152;</Heading>
         <Heading as="h5" variant="caption">
