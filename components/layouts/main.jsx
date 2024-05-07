@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NavBar from '../navbar'
 import { Container } from '@chakra-ui/react'
 import Footer from '../footer'
+import BinaryRain from '../binaryRian'
 
 /**
  * Componente principal de la aplicación.
@@ -45,11 +46,12 @@ const Main = ({ children, router }) => {
         <title>Diego&apos;s Homepage</title>
       </Head>
       <NavBar path={router.asPath} />
-      <Container maxW="container.md" pt={14}>
+      <Container>
+        <BinaryRain />
         <br />
         {children}
-        <Footer />
       </Container>
+      <Footer />
     </div>
   )
 }

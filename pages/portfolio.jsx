@@ -1,4 +1,11 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import {
+  Container,
+  Box,
+  Heading,
+  SimpleGrid,
+  Divider,
+  useColorModeValue
+} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
@@ -11,9 +18,18 @@ import webPage from '../public/images/jobs/network-contact.png'
 
 const Development = () => (
   <Layout title="portfolio">
-    <Container>
+    <Container mt="73" mb="23">
       <Heading as="h3" fontSize={20} mb={4}>
+        {/*         <Box borderRadius="lg"
+          borderWidth={2}
+          borderStyle="solid"
+          mb={6}
+          p={3}
+          textAlign="center"
+          bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}>
+ */}
         Jobs
+        {/*         </Box> */}
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
@@ -47,8 +63,18 @@ const Development = () => (
                     </WorkGridItem>
                 </Section>
             </SimpleGrid> */}
-      <Heading as="h3" fontSize={20} mb={4}>
+
+      <Heading mt="7" as="h3" fontSize={20} mb={4}>
+        {/*         <Box borderRadius="lg"
+          borderWidth={2}
+          borderStyle="solid"
+          mb={6}
+          p={3}
+          textAlign="center"
+          bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}>
+ */}{' '}
         Networking
+        {/*         </Box> */}
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
