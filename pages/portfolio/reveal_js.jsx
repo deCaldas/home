@@ -45,7 +45,7 @@ const Job = () => (
             <span>HTML, reveal.js, Surge</span>
           </ListItem>
         </List>
-        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <AspectRatio maxW="640px" ratio={1.2} my={4}>
           <iframe
             src="https://serautos.surge.sh/"
             title="executive transportation company website Serautos"
