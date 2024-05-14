@@ -19,7 +19,7 @@ const Main = ({ children, router }) => {
     <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Diego's homepage" />
+        <meta name="description" content="Diego's Website" />
         <meta name="author" content="Takuya Matsuyama" />
         <meta name="clone-editor" content="Diego Whiskey" />
         <link
