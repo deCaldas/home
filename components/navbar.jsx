@@ -74,6 +74,14 @@ const Navbar = props => {
           <LinkItem borderRadius="lg" mb={1} p={1} href={'/portfolio'}>
             Portfolio
           </LinkItem>
+          <LinkItem
+            borderRadius="lg"
+            mb={1}
+            p={1}
+            href={'https://web-developer-blog.vercel.app/'}
+          >
+            Blog
+          </LinkItem>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
@@ -98,6 +106,19 @@ const Navbar = props => {
                   css={{ backdropFilter: 'blur(10px)' }}
                 >
                   Portfolio
+                </MenuItem>
+                <MenuItem
+                  as={MenuLink}
+                  href={'https://web-developer-blog.vercel.app/'}
+                  flex={1}
+                  borderRadius="lg"
+                  mb={1}
+                  p={1}
+                  textAlign="center"
+                  bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+                  css={{ backdropFilter: 'blur(10px)' }}
+                >
+                  Blog
                 </MenuItem>
               </MenuList>
             </Menu>
