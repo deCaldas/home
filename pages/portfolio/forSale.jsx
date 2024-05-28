@@ -14,7 +14,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Job = () => (
-  <Layout title="Serautos">
+  <Layout title="Empresa de Transporte">
     <Container mt={73}>
       <Box
         borderRadius="lg"
@@ -27,28 +27,27 @@ const Job = () => (
         css={{ backdropFilter: 'blur(3px)' }}
       >
         <Title>
-          Serautos FT <Badge>2023-</Badge>
+          Página Web A La Venta <Badge>2023-</Badge>
         </Title>
         <P>
-          A HTML presentation framework, made with reveal.js and deployed in
-          Surge.
+          This site was made with HTML, CSS, JavaScript and diployed in Surge technology.
         </P>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>Website</Meta>
-            <Link href="https://serautos.surge.sh/" target="_blank">
-              https://serautos.surge.sh/ <ExternalLinkIcon mx="2px" />
+            <Meta>Web Page</Meta>
+            <Link href="https://empresa-de-transporte.surge.sh/" target="_blank">
+              https://empresa-de-transporte.surge.sh/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>HTML, reveal.js, Surge</span>
+            <span>HTML, CSS, JavaScript and Surge</span>
           </ListItem>
         </List>
         <AspectRatio maxW="640px" ratio={1.2} my={4}>
           <iframe
-            src="https://serautos.surge.sh/"
-            title="executive transportation company website Serautos"
+            src="https://empresa-de-transporte.surge.sh/"
+            title="executive transportation company website"
             frameBorder="0"
             allowFullScreen
           ></iframe>

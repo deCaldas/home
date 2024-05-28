@@ -9,12 +9,13 @@ import {
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-
+/* Imgs Projects */
 import wCsJS from '../public/images/jobs/wCsJS-branding.png'
 import f101bs from '../public/images/jobs/f101bs-branding.png'
-import reveal_js from '../public/images/jobs/reveal_js-serautosFT.png'
 import blogs from '../public/images/jobs/deCaldas-blogsProject.png'
+/* Imgs Jobs */
 import webPage from '../public/images/jobs/network-contact.png'
+import webPageForSale from '../public/images/jobs/webPageForSale.png'
 
 const Development = () => (
   <Layout title="portfolio">
@@ -34,12 +35,11 @@ const Development = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem
-            id="reveal_js"
-            title="Serautos FT"
-            thumbnail={reveal_js}
+            id="forSale"
+            title="Web Page for Sale"
+            thumbnail={webPageForSale}
           >
-            The website of a passenger transport company. This site was made
-            with the technology of reveal.js.
+            This website is for sale and is aimed at the passenger transportation niche.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
