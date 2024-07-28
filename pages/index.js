@@ -27,16 +27,7 @@ const Home = () => (
     <Container
       marginTop="73px"
       marginBottom="23px"
-      borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
-      borderRadius="lg"
-      borderWidth={2}
-      borderStyle="solid"
-      bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-      css={{ backdropFilter: 'blur(3px)' }}
     >
-      <AspectRatio ratio={1.7} my={4}>
-        <MatrixRain />
-      </AspectRatio>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -75,6 +66,9 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
+      <AspectRatio ratio={1.7} my={4}>
+          <MatrixRain />
+        </AspectRatio>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work

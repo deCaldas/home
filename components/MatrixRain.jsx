@@ -5,7 +5,7 @@ const MatrixRain = () => {
     const canvas = document.querySelector('#my-canvas')
     const context = canvas.getContext('2d')
     const content =
-      '田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑'.split(
+      'Whiskey Diego 是一名 Web 開發人員和資料工程師。'.split(
         ''
       )
 
