@@ -30,13 +30,18 @@ const Job = () => (
           Página Web A La Venta <Badge>2023-</Badge>
         </Title>
         <P>
-          This site was made with HTML, CSS, JavaScript and diployed in Surge technology.
+          This site was made with HTML, CSS, JavaScript and diployed in Surge
+          technology.
         </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Web Page</Meta>
-            <Link href="https://empresa-de-transporte.surge.sh/" target="_blank">
-              https://empresa-de-transporte.surge.sh/ <ExternalLinkIcon mx="2px" />
+            <Link
+              href="https://empresa-de-transporte.surge.sh/"
+              target="_blank"
+            >
+              https://empresa-de-transporte.surge.sh/{' '}
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>

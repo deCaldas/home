@@ -39,7 +39,8 @@ const Development = () => (
             title="Web Page for Sale"
             thumbnail={webPageForSale}
           >
-            This website is for sale and is aimed at the passenger transportation niche.
+            This website is for sale and is aimed at the passenger
+            transportation niche.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
