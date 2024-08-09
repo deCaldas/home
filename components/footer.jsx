@@ -20,7 +20,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <IoLogoTwitter />
+            {/* <IoLogoTwitter /> */}
           </a>
         </div>
       </Heading>

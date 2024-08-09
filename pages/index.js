@@ -63,9 +63,11 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
+
       <AspectRatio ratio={1.7} my={4}>
         <MatrixRain />
       </AspectRatio>
+
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
