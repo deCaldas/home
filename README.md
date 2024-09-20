@@ -1,6 +1,6 @@
 # Diego's website
 
-[https://www.deCaldas.github.io/home/](https://www.deCaldas.github.io/home/)
+[https://deCaldas.github.io/home/](https://deCaldas.github.io/home/)
 
 ## Stack
 
