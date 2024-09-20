@@ -4,7 +4,10 @@ const MatrixRain = () => {
   useEffect(() => {
     const canvas = document.querySelector('#my-canvas')
     const context = canvas.getContext('2d')
-    const content = 'Whiskey Diego 是一名 Web 開發人員和資料工程師。'.split('')
+    const content =
+      '我叫 Diego Whiskey，是一名數位行銷人員、Web 開發人員和資料工程師，專門研究 JavaScript 和 Node.js'.split(
+        ''
+      )
 
     const matrixRain = () => {
       const { width, height } = canvas
