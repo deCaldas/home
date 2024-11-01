@@ -32,8 +32,7 @@ const Home = () => (
           </Heading>
           <Paragraph>[ Entrepreneurship | Researcher | Artist ]</Paragraph>
           <Heading as="h6" variant="caption">
-            Full Stack web Developer with Specialization in .NET, JavaScript and
-            Data Engineering
+            Full Stack web Developer and Data Engineering
           </Heading>
         </Box>
         <Box
