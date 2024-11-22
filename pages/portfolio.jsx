@@ -41,9 +41,10 @@ const Development = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
-          <WorkGridItem id="webDeveloperBlog" title="Web Developer Blog" thumbnail={webDeveloperBlog}
+          <WorkGridItem id="forSale" title="To Job Company Project" thumbnail={webPageForSale}
           >
-            A personal blog about web development.
+            This website is for sale and is aimed at the passenger
+            transportation niche.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -56,9 +57,9 @@ const Development = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
-          <WorkGridItem id="forSale" title="Web Page for Sale" thumbnail={webPageForSale}>
-            This website is for sale and is aimed at the passenger
-            transportation niche.
+          <WorkGridItem id="webDeveloperBlog" title="Web Developer Blog" thumbnail={webDeveloperBlog}
+          >
+            A personal blog about web development.
           </WorkGridItem>
         </Section>
         <Section>
@@ -69,11 +70,6 @@ const Development = () => (
         <Section>
             <WorkGridItem id="f101bs" title="Finanzas 101 Bots" thumbnail={f101bs}>
                 The website of an algorithmic trader. This site implements a chatbot specialized in financial matters.
-            </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-            <WorkGridItem id="blogs" title="Blogs" thumbnail={blogs}>
-                A website that integrates 3 blogs. This site is loaded dynamically from basic HTML, CSS and JavaScript technologies by manipulating the DOM.
             </WorkGridItem>
         </Section>
       </SimpleGrid>
