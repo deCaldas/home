@@ -9,14 +9,13 @@ import {
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-/* Imgs Projects */
+/* Imgs */
 import wCsJS from '../public/images/jobs/wCsJS-branding.png'
 import f101bs from '../public/images/jobs/f101bs-branding.png'
-import blogs from '../public/images/jobs/deCaldas-blogsProject.png'
-/* Imgs Jobs */
-import webPage from '../public/images/jobs/network-contact.png'
+import contactNet_Angeliana from '../public/images/jobs/contactNet_Angeliana.png'
 import webPageForSale from '../public/images/jobs/webPageForSale.png'
 import webDeveloperBlog from '../public/images/jobs/web-developer-blog.png'
+import mostlyEntertainment from '../public/images/jobs/mostlyEntertainment.png'
 
 const Development = () => (
   <Layout title="portfolio">
@@ -52,17 +51,22 @@ const Development = () => (
       <Divider my={6} />
 
       <Heading as="h3" variant="section-title">
-        Projects
+        Personal Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.1}>
+          <WorkGridItem id="mostlyEntertainment" title="Mostly Entertainment Home Studio" thumbnail={mostlyEntertainment}>
+            Artistic project.
+          </WorkGridItem>
+        </Section>
         <Section delay={0.1}>
           <WorkGridItem id="webDeveloperBlog" title="Web Developer Blog" thumbnail={webDeveloperBlog}
           >
             A personal blog about web development.
           </WorkGridItem>
         </Section>
-        <Section>
+{/*         <Section>
           <WorkGridItem id="wCsJS" title="Web Components" thumbnail={wCsJS}>
                 A website built with Web Component technology and in the Latin American language.
             </WorkGridItem>
@@ -71,7 +75,7 @@ const Development = () => (
             <WorkGridItem id="f101bs" title="Finanzas 101 Bots" thumbnail={f101bs}>
                 The website of an algorithmic trader. This site implements a chatbot specialized in financial matters.
             </WorkGridItem>
-        </Section>
+        </Section> */}
       </SimpleGrid>
 
     <Divider my={6} />
@@ -82,9 +86,9 @@ const Development = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem
-            id="webPage"
-            title="Network Contacts"
-            thumbnail={webPage}
+            id="contactNet_Angeliana"
+            title="Angeliana Alvarez Homepage"
+            thumbnail={contactNet_Angeliana}
           >
             Web pages to my friends. This page is made possible by Next.js and
             Chakra UI.
