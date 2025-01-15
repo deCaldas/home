@@ -1,18 +1,18 @@
 import {
-    Container,
-    Badge,
-    Link,
-    List,
-    ListItem,
-    AspectRatio,
-    Box,
-    useColorModeValue
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  AspectRatio,
+  Box,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/jobsTemplate'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
-  
+
 const Job = () => (
   <Layout title="Developer Web Blog">
     <Container mt={73}>
@@ -33,10 +33,7 @@ const Job = () => (
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Personal Blog about Web Development</Meta>
-            <Link
-              href="https://web-developer-blog.vercel.app/"
-              target="_blank"
-            >
+            <Link href="https://web-developer-blog.vercel.app/" target="_blank">
               https://web-developer-blog.vercel.app/{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
@@ -58,6 +55,6 @@ const Job = () => (
     </Container>
   </Layout>
 )
-  
+
 export default Job
 export { getStaticProps } from '../../components/chakra'
