@@ -1,18 +1,18 @@
 import {
-    Container,
-    Badge,
-    Link,
-    List,
-    ListItem,
-    AspectRatio,
-    Box,
-    useColorModeValue
-  } from '@chakra-ui/react'
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  AspectRatio,
+  Box,
+  useColorModeValue
+} from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/jobsTemplate'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
-  
+
 const Job = () => (
   <Layout title="Web Components">
     <Container mt={73}>
@@ -33,12 +33,8 @@ const Job = () => (
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Web Components</Meta>
-            <Link
-              href="https://decaldas.github.io/wCsJS/"
-              target="_blank"
-            >
-              https://decaldas.github.io/wCsJS/{' '}
-              <ExternalLinkIcon mx="2px" />
+            <Link href="https://decaldas.github.io/wCsJS/" target="_blank">
+              https://decaldas.github.io/wCsJS/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -58,6 +54,6 @@ const Job = () => (
     </Container>
   </Layout>
 )
-  
+
 export default Job
 export { getStaticProps } from '../../components/chakra'

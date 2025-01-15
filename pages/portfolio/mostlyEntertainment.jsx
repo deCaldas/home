@@ -14,7 +14,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Job = () => (
-  <Layout title="Developer Web Blog">
+  <Layout title="Mostly Entertainment Home Studio">
     <Container mt={73}>
       <Box
         borderRadius="lg"
@@ -27,26 +27,33 @@ const Job = () => (
         css={{ backdropFilter: 'blur(3px)' }}
       >
         <Title>
-          Developer Web Blog <Badge>2023-</Badge>
+          Mostly Entertainment Home Studio <Badge>2025-</Badge>
         </Title>
-        <P>Like mine.</P>
+        <P>
+          Attractive and responsive user interface (UI) design. Clean, efficient
+          and well-documented code implementation. And multimedia content
+          integration to enhance user experience
+        </P>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>Personal Blog about Web Development</Meta>
-            <Link href="https://web-developer-blog.vercel.app/" target="_blank">
-              https://web-developer-blog.vercel.app/{' '}
+            <Meta>Homepage</Meta>
+            <Link
+              href="https://decaldas.github.io/mostly-entertainment/"
+              target="_blank"
+            >
+              https://decaldas.github.io/mostly-entertainment/{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>JavaScrit, Nextjs y Reactjs</span>
+            <span>Front-end web development with HTML, CSS and JavaScript</span>
           </ListItem>
         </List>
         <AspectRatio maxW="640px" ratio={1.7} my={4}>
           <iframe
-            src="https://web-developer-blog.vercel.app/"
-            title="Developer Web Blog"
+            src="https://decaldas.github.io/mostly-entertainment/"
+            title="Mostly Entertainment Home Studio"
             frameBorder="0"
             allowFullScreen
           ></iframe>
