@@ -21,15 +21,17 @@ const Development = () => (
   <Layout title="portfolio">
     <Container mt="73" mb="23">
       <Heading mt="7" as="h3" fontSize={20} mb={4}>
-        <Box borderRadius="lg"
+        <Box
+          borderRadius="lg"
           borderWidth={2}
           borderStyle="solid"
           mb={6}
           p={3}
           textAlign="center"
-          bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}>
-            {' Hola Mundo!! '}
-        </Box> 
+          bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+        >
+          {' Hola Mundo!! '}
+        </Box>
       </Heading>
 
       <Divider my={6} />
@@ -40,7 +42,10 @@ const Development = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
-          <WorkGridItem id="forSale" title="To Job Company Project" thumbnail={webPageForSale}
+          <WorkGridItem
+            id="forSale"
+            title="To Job Company Project"
+            thumbnail={webPageForSale}
           >
             This website is for sale and is aimed at the passenger
             transportation niche.
@@ -56,17 +61,24 @@ const Development = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
-          <WorkGridItem id="mostlyEntertainment" title="Mostly Entertainment Home Studio" thumbnail={mostlyEntertainment}>
+          <WorkGridItem
+            id="mostlyEntertainment"
+            title="Mostly Entertainment Home Studio"
+            thumbnail={mostlyEntertainment}
+          >
             Artistic project.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="webDeveloperBlog" title="Web Developer Blog" thumbnail={webDeveloperBlog}
+          <WorkGridItem
+            id="webDeveloperBlog"
+            title="Web Developer Blog"
+            thumbnail={webDeveloperBlog}
           >
             A personal blog about web development.
           </WorkGridItem>
         </Section>
-{/*         <Section>
+        {/*         <Section>
           <WorkGridItem id="wCsJS" title="Web Components" thumbnail={wCsJS}>
                 A website built with Web Component technology and in the Latin American language.
             </WorkGridItem>
@@ -78,7 +90,7 @@ const Development = () => (
         </Section> */}
       </SimpleGrid>
 
-    <Divider my={6} />
+      <Divider my={6} />
 
       <Heading as="h3" variant="section-title">
         Networking
