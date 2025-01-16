@@ -1,32 +1,34 @@
 import Link from 'next/link'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import Paragraph from './paragraph'
 
-const JobBox = styled.span`
+const BrandingBox = styled.span`
   font-weight: bold;
-  font-size: 18px;
+  font-size: 31px;
   display: inline-flex;
   align-items: center;
-  height: 30px;
-  line-height: 20px;
-  padding: 10px;
+  height: 23px;
+  line-height: 23px;
+  padding: 2px;
 `
 
-const JobTitle = () => {
+const Branding = () => {
   return (
     <Link href="/" scroll={false}>
-      <JobBox>
+      <BrandingBox>
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily='M PLUS Rounded 1c", sans-serif'
           fontWeight="bold"
           ml={3}
         >
-          Web Developer
+          De Caldas
         </Text>
-      </JobBox>
+      </BrandingBox>
+      <Paragraph>[Web Development]</Paragraph>
     </Link>
   )
 }
 
-export default JobTitle
+export default Branding

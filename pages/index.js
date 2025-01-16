@@ -30,7 +30,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Diego Whiskey
           </Heading>
-          <Paragraph>[ Entrepreneurship | Researcher | Artist ]</Paragraph>
+
           <Heading as="h6" variant="caption">
             Full Stack web Developer and Data Engineering
           </Heading>

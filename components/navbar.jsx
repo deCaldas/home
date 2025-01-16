@@ -13,9 +13,10 @@ import {
   IconButton,
   Flex
 } from '@chakra-ui/react'
+import Paragraph from './paragraph'
 import ThemeToggleButton from './theme-toggle-button'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import JobTitle from './jobtitle'
+import Branding from './branding'
 import { MenuLink } from './MenuLink'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -57,11 +58,8 @@ const Navbar = props => {
         justify="space-between"
         marginTop={1}
       >
-        {/* <Box flex={1} align="left" mt={3}><HeartButton /></Box> */}
         <Flex align="center" mr={5}>
-          <Heading as="h1" variant="title">
-            <JobTitle />
-          </Heading>
+            <Branding />
         </Flex>
         <Stack
           direction={{ base: 'column', md: 'row' }}
