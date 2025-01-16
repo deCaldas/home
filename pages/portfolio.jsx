@@ -66,7 +66,7 @@ const Development = () => (
             title="Mostly Entertainment Home Studio"
             thumbnail={mostlyEntertainment}
           >
-            Artistic project.
+            Artistic project. The website design is based on the principles of simplicity, elegance and ease of use. And multimedia content integration to enhance user experience
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
