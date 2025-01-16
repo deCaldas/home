@@ -14,7 +14,7 @@ import {
   Flex
 } from '@chakra-ui/react'
 import ThemeToggleButton from './theme-toggle-button'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Branding from './branding'
 import { MenuLink } from './MenuLink'
 
@@ -78,6 +78,7 @@ const Navbar = props => {
             href={'https://web-developer-blog.vercel.app/'}
           >
             Blog
+            <ExternalLinkIcon mx="2px" />
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
@@ -116,6 +117,7 @@ const Navbar = props => {
                   css={{ backdropFilter: 'blur(10px)' }}
                 >
                   Blog
+                  <ExternalLinkIcon mx="2px" />
                 </MenuItem>
               </MenuList>
             </Menu>
