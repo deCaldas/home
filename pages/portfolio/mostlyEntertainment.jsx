@@ -30,7 +30,9 @@ const Job = () => (
           Mostly Entertainment Home Studio <Badge>2025-</Badge>
         </Title>
         <P>
-        Attractive and responsive user interface (UI) design. Clean, efficient and well-documented code implementation. SEO techniques were implemented to improve the website's visibility in search engines.
+          Attractive and responsive user interface (UI) design. Clean, efficient
+          and well-documented code implementation. SEO techniques were
+          implemented to improve the website's visibility in search engines.
         </P>
         <List ml={4} my={4}>
           <ListItem>
