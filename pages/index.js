@@ -30,9 +30,8 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Diego Whiskey
           </Heading>
-
           <Heading as="h6" variant="caption">
-            Full Stack web Developer and Data Engineering
+            Web Developer
           </Heading>
         </Box>
         <Box
@@ -72,11 +71,10 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Let me introduce an exceptional professional who is passionate about
-          web development and databases. If you are looking for a valuable asset
-          to any team in web development, you should definitely check him out.
-          Outside of work, he enjoys recording his voice and singing songs when
-          he&apos;s offline.
+          Let me introduce an exceptional web developer. If you are looking for
+          a valuable asset to any team in web development, you should check him
+          out. Outside of work, he enjoys recording and singing songs of rap
+          music.
         </Paragraph>
       </Section>
       <Box
