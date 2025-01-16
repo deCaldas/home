@@ -13,7 +13,6 @@ import {
   IconButton,
   Flex
 } from '@chakra-ui/react'
-import Paragraph from './paragraph'
 import ThemeToggleButton from './theme-toggle-button'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import Branding from './branding'
