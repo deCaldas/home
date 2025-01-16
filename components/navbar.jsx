@@ -58,7 +58,7 @@ const Navbar = props => {
         marginTop={1}
       >
         <Flex align="center" mr={5}>
-            <Branding />
+          <Branding />
         </Flex>
         <Stack
           direction={{ base: 'column', md: 'row' }}
