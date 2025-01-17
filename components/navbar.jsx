@@ -108,6 +108,7 @@ const Navbar = props => {
                 <MenuItem
                   as={MenuLink}
                   href={'https://web-developer-blog.vercel.app/'}
+                  target="_blank"
                   flex={1}
                   borderRadius="lg"
                   mb={1}
