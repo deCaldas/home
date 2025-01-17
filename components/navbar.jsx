@@ -72,10 +72,11 @@ const Navbar = props => {
             Portfolio
           </LinkItem>
           <LinkItem
+            href={'https://web-developer-blog.vercel.app/'}
+            target="_blank"
             borderRadius="lg"
             mb={1}
             p={1}
-            href={'https://web-developer-blog.vercel.app/'}
           >
             Blog
             <ExternalLinkIcon mx="2px" />
