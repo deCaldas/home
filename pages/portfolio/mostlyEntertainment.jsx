@@ -50,7 +50,7 @@ const Job = () => (
             <span>Front-end web development with HTML, CSS and JavaScript</span>
           </ListItem>
         </List>
-        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
           <iframe
             src="https://decaldas.github.io/mostly-entertainment/"
             title="Mostly Entertainment Home Studio"

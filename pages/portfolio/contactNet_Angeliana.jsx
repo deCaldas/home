@@ -46,7 +46,7 @@ const Job = () => (
             <span>Next.js and GitHub Pages</span>
           </ListItem>
         </List>
-        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
           <iframe
             src="https://decaldas.github.io/angeliana-alvarez/"
             title="A homepage to my friend"

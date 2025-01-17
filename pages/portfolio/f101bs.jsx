@@ -46,7 +46,7 @@ const Job = () => (
             <span>JavaScrit, HTML5 y CSS3</span>
           </ListItem>
         </List>
-        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
           <iframe
             src="https://decaldas.github.io/finanzas-101-bots/"
             title="Web de Finanzas Personales"

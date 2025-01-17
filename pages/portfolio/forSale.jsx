@@ -49,7 +49,7 @@ const Job = () => (
             <span>HTML, CSS, JavaScript and Surge</span>
           </ListItem>
         </List>
-        <AspectRatio maxW="640px" ratio={1.2} my={4}>
+        <AspectRatio maxW="640px" height={854} ratio={1.2} my={4}>
           <iframe
             src="https://empresa-de-transporte.surge.sh/"
             title="executive transportation company website"
