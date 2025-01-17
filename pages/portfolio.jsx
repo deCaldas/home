@@ -37,7 +37,7 @@ const Development = () => (
       <Divider my={6} />
 
       <Heading as="h3" variant="section-title">
-        Work
+        Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -51,15 +51,7 @@ const Development = () => (
             transportation niche.
           </WorkGridItem>
         </Section>
-      </SimpleGrid>
 
-      <Divider my={6} />
-
-      <Heading as="h3" variant="section-title">
-        Personal Projects
-      </Heading>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem
             id="mostlyEntertainment"
@@ -71,16 +63,8 @@ const Development = () => (
             integration to enhance user experience
           </WorkGridItem>
         </Section>
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="webDeveloperBlog"
-            title="Web Developer Blog"
-            thumbnail={webDeveloperBlog}
-          >
-            A personal blog about web development.
-          </WorkGridItem>
-        </Section>
-        {/*         <Section>
+        {/*
+        <Section>
           <WorkGridItem id="wCsJS" title="Web Components" thumbnail={wCsJS}>
                 A website built with Web Component technology and in the Latin American language.
             </WorkGridItem>
@@ -89,7 +73,8 @@ const Development = () => (
             <WorkGridItem id="f101bs" title="Finanzas 101 Bots" thumbnail={f101bs}>
                 The website of an algorithmic trader. This site implements a chatbot specialized in financial matters.
             </WorkGridItem>
-        </Section> */}
+        </Section> 
+        */}
       </SimpleGrid>
 
       <Divider my={6} />
@@ -104,8 +89,7 @@ const Development = () => (
             title="Angeliana Alvarez Homepage"
             thumbnail={contactNet_Angeliana}
           >
-            Web pages to my friends. This page is made possible by Next.js and
-            Chakra UI.
+            Web page to my friend. This page is made possible by Next.js and Chakra UI.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
