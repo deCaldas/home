@@ -89,7 +89,8 @@ const Development = () => (
             title="Angeliana Alvarez Homepage"
             thumbnail={contactNet_Angeliana}
           >
-            Web page to my friend. This page is made possible by Next.js and Chakra UI.
+            Web page to my friend. This page is made possible by Next.js and
+            Chakra UI.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
