@@ -24,12 +24,12 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   return (
     <Link
       as={NextLink}
-      href={href}
-      scroll={false}
-      p={9}
       bg={active ? 'grassTeal' : undefined}
       color={active ? '#202023' : inactiveColor}
+      href={href}
+      scroll={false}
       target={target}
+      p={9}
       {...props}
     >
       {children}
@@ -43,40 +43,46 @@ const Navbar = props => {
     <Box
       position="fixed"
       as="nav"
-      w="100%"
       bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
       css={{ backdropFilter: 'blur(10px)' }}
+      w="100%"
       zIndex={2}
       {...props}
     >
       <Container
-        display="flex"
-        maxW="container.md"
-        wrap="wrap"
         align="center"
+        display="flex"
         justify="space-between"
         marginTop={1}
+        maxW="container.md"
+        wrap="wrap"
       >
         <Flex align="center" mr={5}>
           <Branding />
         </Flex>
         <Stack
+          alignItems="center"
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
-          width={{ base: 'full', md: 'auto' }}
-          alignItems="center"
           flexGrow={1}
           mt={{ base: 1, md: 0 }}
+          width={{ base: 'full', md: 'auto' }}
         >
-          <LinkItem borderRadius="lg" mb={1} p={1} href={'/portfolio'}>
+          <LinkItem 
+            bg={useColorModeValue( 'white', 'black')}
+            borderRadius="lg" 
+            href={'/portfolio'}
+            mb={1} 
+            p={1}>
             Portfolio
           </LinkItem>
           <LinkItem
-            href={'https://web-developer-blog.vercel.app/'}
-            target="_blank"
+            bg={useColorModeValue('white', 'black')}
             borderRadius="lg"
+            href={'https://web-developer-blog.vercel.app/'}
             mb={1}
             p={1}
+            target="_blank"
           >
             Blog
             <ExternalLinkIcon mx="2px" />
@@ -84,7 +90,9 @@ const Navbar = props => {
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+          <Box 
+            ml={2} 
+            display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
@@ -95,28 +103,28 @@ const Navbar = props => {
               <MenuList>
                 <MenuItem
                   as={MenuLink}
-                  href={'/portfolio'}
-                  flex={1}
+                  bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
                   borderRadius="lg"
+                  css={{ backdropFilter: 'blur(10px)' }}
+                  flex={1}
+                  href={'/portfolio'}
                   mb={1}
                   p={1}
                   textAlign="center"
-                  bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-                  css={{ backdropFilter: 'blur(10px)' }}
                 >
                   Portfolio
                 </MenuItem>
                 <MenuItem
                   as={MenuLink}
+                  bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+                  borderRadius="lg"
+                  css={{ backdropFilter: 'blur(10px)' }}
+                  flex={1}
                   href={'https://web-developer-blog.vercel.app/'}
                   target="_blank"
-                  flex={1}
-                  borderRadius="lg"
                   mb={1}
                   p={1}
                   textAlign="center"
-                  bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-                  css={{ backdropFilter: 'blur(10px)' }}
                 >
                   Blog
                   <ExternalLinkIcon mx="2px" />
