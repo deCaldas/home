@@ -68,12 +68,13 @@ const Navbar = props => {
           mt={{ base: 1, md: 0 }}
           width={{ base: 'full', md: 'auto' }}
         >
-          <LinkItem 
-            bg={useColorModeValue( 'white', 'black')}
-            borderRadius="lg" 
+          <LinkItem
+            bg={useColorModeValue('white', 'black')}
+            borderRadius="lg"
             href={'/portfolio'}
-            mb={1} 
-            p={1}>
+            mb={1}
+            p={1}
+          >
             Portfolio
           </LinkItem>
           <LinkItem
@@ -90,9 +91,7 @@ const Navbar = props => {
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
-          <Box 
-            ml={2} 
-            display={{ base: 'inline-block', md: 'none' }}>
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
