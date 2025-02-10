@@ -12,7 +12,7 @@ import { WorkGridItem } from '../components/grid-item'
 /* Imgs */
 import contactNet_Angeliana from '../public/images/contactNet_Angeliana.png'
 import mostlyEntertainment from '../public/images/mostlyEntertainment.png'
-import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops'
+import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops.png'
 
 const Development = () => (
   <Layout title="portfolio">
