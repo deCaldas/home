@@ -29,12 +29,12 @@ const Job = () => (
         <Title>
         Automotive Workshops Blog <Badge>2025-</Badge>
         </Title>
-        <P>Un blog es un componente crucial en una <strong>estrategia de SEO</strong>. Al generar contenido fresco y relevante, utilizar palabras clave apropiadas, aumentar los backlinks y optimizar las etiquetas HTML y las imágenes, puedes mejorar significativamente la clasificación de tu sitio web en los resultados de búsqueda y, en última instancia, aumentar el tráfico y las conversiones</P>
+        <P>Un componente crucial en una <strong>estrategia de SEO</strong>. Al generar contenido fresco y relevante, utilizar palabras clave apropiadas, aumentar los backlinks y optimizar las etiquetas HTML y las imágenes, puedes mejorar significativamente la clasificación del sitio web en los resultados de búsqueda y, en última instancia, aumentar el tráfico y las conversiones</P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Automotive Workshops Blog</Meta>
-            <Link href="here_URL_of_automotive-workshops-Blog" target="_blank">
-              here_URL_of_automotive-workshops-Blog <ExternalLinkIcon mx="2px" />
+            <Link href="https://landings-for-automotive-workshops.vercel.app/" target="_blank">
+              https://landings-for-automotive-workshops.vercel.app/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -44,7 +44,7 @@ const Job = () => (
         </List>
         <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
           <iframe
-            src="here_URL_of_automotive-workshops-Blog"
+            src="https://landings-for-automotive-workshops.vercel.app/"
             title="Web Components"
             frameBorder="0"
             allowFullScreen
