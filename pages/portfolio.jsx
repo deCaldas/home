@@ -10,12 +10,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 /* Imgs */
-import wCsJS from '../public/images/jobs/wCsJS-branding.png'
-import f101bs from '../public/images/jobs/f101bs-branding.png'
-import contactNet_Angeliana from '../public/images/jobs/contactNet_Angeliana.png'
-import webPageForSale from '../public/images/jobs/webPageForSale.png'
-import webDeveloperBlog from '../public/images/jobs/web-developer-blog.png'
-import mostlyEntertainment from '../public/images/jobs/mostlyEntertainment.png'
+import contactNet_Angeliana from '../public/images/contactNet_Angeliana.png'
+import mostlyEntertainment from '../public/images/mostlyEntertainment.png'
+import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops'
 
 const Development = () => (
   <Layout title="portfolio">
@@ -43,12 +40,11 @@ const Development = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem
-            id="forSale"
-            title="To Job Company Project"
-            thumbnail={webPageForSale}
+            id="landingsFor-automotive-workshops"
+            title="Landings for Automotive Workshop"
+            thumbnail={landingsForAutomotiveWorkshops}
           >
-            This website is for sale and is aimed at the passenger
-            transportation niche.
+            This&apos;s self-employment, landing page with three funnels aimed at automotive workshops
           </WorkGridItem>
         </Section>
 
@@ -63,18 +59,6 @@ const Development = () => (
             integration to enhance user experience
           </WorkGridItem>
         </Section>
-        {/*
-        <Section>
-          <WorkGridItem id="wCsJS" title="Web Components" thumbnail={wCsJS}>
-                A website built with Web Component technology and in the Latin American language.
-            </WorkGridItem>
-        </Section>
-        <Section>
-            <WorkGridItem id="f101bs" title="Finanzas 101 Bots" thumbnail={f101bs}>
-                The website of an algorithmic trader. This site implements a chatbot specialized in financial matters.
-            </WorkGridItem>
-        </Section> 
-        */}
       </SimpleGrid>
 
       <Divider my={6} />
