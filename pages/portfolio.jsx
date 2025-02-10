@@ -44,7 +44,7 @@ const Development = () => (
             title="Landings for Automotive Workshop"
             thumbnail={landingsForAutomotiveWorkshops}
           >
-            This&apos;s self-employment, landing page with three funnels aimed at automotive workshops
+            This&apos;s self-employment, landing page funnel aimed at automotive workshops
           </WorkGridItem>
         </Section>
 
