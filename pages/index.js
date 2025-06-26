@@ -27,10 +27,10 @@ const Home = () => (
     <Container marginTop="73px" marginBottom="23px">
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Diego Whiskey
+          <Heading as="h2" marginLeft="7px" variant="page-title">
+            Diego Toro C&aacute;rdenas
           </Heading>
-          <Heading as="h6" variant="caption">
+          <Heading as="h6" variant="caption" marginLeft="17px">
             Web Developer
           </Heading>
         </Box>
@@ -41,7 +41,7 @@ const Home = () => (
           textAlign="center"
         >
           <Box
-            marginTop="23px"
+            margin="3px"
             borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             borderWidth={2}
             borderStyle="solid"
@@ -90,10 +90,11 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
         css={{ backdropFilter: 'blur(7px)' }}
       >
-        <Heading>&#128152;</Heading>
         <Heading as="h5" variant="caption">
+        <Heading>&#128152;</Heading>
           Hip Hop Art &amp; Rap Music
         </Heading>
+        <br />        
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Blogpost</Meta>
@@ -102,7 +103,7 @@ const Home = () => (
               target="_blank"
             >
               De Las Calles Al Data Center <br />
-              Una Odisea Desde El Hip Hop Hasta La Ingeniería De Datos{' '}
+              Una Odisea Desde El Hip Hop Hasta La Ingenier&iacute;a De Datos{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
