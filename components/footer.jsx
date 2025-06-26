@@ -1,5 +1,4 @@
 import { Box, Heading } from '@chakra-ui/react'
-import Link from 'next/link'
 import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 import Logo from './logo'
 
@@ -25,17 +24,17 @@ const Footer = () => {
         </div>
       </Heading>
       <Logo />
-      <div>
+      {/* <div>
         <div style={{ display: 'inline-flex' }}>
           &copy;
           {` • `}
           {`${new Date().getFullYear()}`}
           {` • `}
-          Diego Whiskey
+          Diego Toro C&aacute;rdenas
           {` • `}
           All Rights Reserved
         </div>
-      </div>
+      </div> */}
       <div>
         This website is built based on the{' '}
         <a href="https://www.craftz.dog/" target="_blank" rel="noreferrer">
