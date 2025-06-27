@@ -30,3 +30,12 @@ You can create your own homepage for free without notifying me by forking this p
 - Add a link to the [homepage](https://www.decaldas.github.io/home/) of who is the original creater.
 
 Check out [LICENSE](./LICENSE) for more detail.
+
+
+## Personal Note
+
+This project was originally cloned from Takuya Matsuyama’s website as a learning exercise. At the time, I was just starting my journey with web development.
+
+Through this clone, I learned practical Git, GitHub Pages, Next.js, Chakra UI, React, and more — including valuable lessons about structure, modularity, and design. Over time, I’ve customized it with my portfolio, projects, and personal branding.
+
+This homepage is part of my growth story. I honor its origin and continue building my own path from here.
