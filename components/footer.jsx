@@ -1,8 +1,7 @@
-import { Box, Heading } from '@chakra-ui/react'
-import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
-import Logo from './logo'
+import { Box, Heading, Link } from '@chakra-ui/react'
+import { IoLogoGithub } from 'react-icons/io5'
 
-const Footer = () => {
+const Footer = ({ onOpen}) => {
   return (
     <Box align="center" opacity={0.4} fontSize="sm">
       <Heading>
@@ -13,34 +12,17 @@ const Footer = () => {
             rel="noreferrer"
           >
             <IoLogoGithub />
-          </a>
-          <a
-            href="https://twitter.com/d_caldasCaridad"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {/* <IoLogoTwitter /> */}
+            <Heading variant="caption">De Caldas</Heading>
           </a>
         </div>
       </Heading>
-      <Logo />
+
       {/* <div>
-        <div style={{ display: 'inline-flex' }}>
-          &copy;
-          {` • `}
-          {`${new Date().getFullYear()}`}
-          {` • `}
-          Diego Toro C&aacute;rdenas
-          {` • `}
-          All Rights Reserved
-        </div>
-      </div> */}
-      <div>
         This website is built based on the{' '}
-        <a href="https://www.craftz.dog/" target="_blank" rel="noreferrer">
+        <Link onClick={onOpen} color="blue.400" cursor="pointer">
           Takuya Matsuyama&apos;s website
-        </a>
-      </div>
+        </Link>
+      </div> */}
     </Box>
   )
 }
