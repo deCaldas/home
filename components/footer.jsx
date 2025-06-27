@@ -33,7 +33,7 @@ const Footer = () => {
         <Box aling="center">
           <div>
           This website is built based on the {' '}
-          <Link onClick={onOpen} color="blue.400" cursor="pointer" size="sm">
+          <Link onClick={onOpen} cursor="pointer" size="sm">
             Takuya Matsuyama&apos;s site
           </Link>
           </div>
