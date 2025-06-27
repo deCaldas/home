@@ -50,7 +50,6 @@ const Main = ({ children, router }) => {
         <br />
         {children}
       </Container>
-      <Footer />
     </div>
   )
 }
