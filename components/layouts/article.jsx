@@ -1,9 +1,5 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-import { useDisclosure } from '@chakra-ui/react'
-import Footer from '../footer'
-import Modal from '../Modal'
-
 
 /**
  * Componente de diseño general para páginas.
@@ -25,7 +21,6 @@ const variants = {
 
 const Layout = ({ children, title }) => {
   const t = `${title} - De Caldas`
-  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <motion.article
       initial="hidden"
@@ -44,8 +39,6 @@ const Layout = ({ children, title }) => {
           </Head>
         )}
         {children}
-        <Footer onOpen={onOpen} />
-        <Modal isOpen={isOpen} onClose={onClose} />
       </>
     </motion.article>
   )

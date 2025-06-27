@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import NavBar from '../navbar'
 import { Container } from '@chakra-ui/react'
+import { useDisclosure } from '@chakra-ui/react'
 import Footer from '../footer'
 
 /**
@@ -15,6 +16,8 @@ import Footer from '../footer'
  * @returns {JSX.Element} - El componente principal renderizado.
  */
 const Main = ({ children, router }) => {
+  const { onOpen } = useDisclosure()
+  
   return (
     <div>
       <Head>
@@ -50,6 +53,7 @@ const Main = ({ children, router }) => {
         <br />
         {children}
       </Container>
+      <Footer onOpen={onOpen} />
     </div>
   )
 }
