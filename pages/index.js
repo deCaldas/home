@@ -1,22 +1,15 @@
 import {
-  ListItem,
-  Link,
-  List,
   Container,
   Heading,
   Box,
   useColorModeValue,
   chakra,
-  AspectRatio
 } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import LayoutMain from '../components/layouts/main'
 import Section from '../components/section'
 import Image from 'next/image'
-import { Meta } from '../components/jobsTemplate'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import MatrixRain from '../components/MatrixRain'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -62,10 +55,6 @@ const Home = () => (
           </Box>
         </Box>
 
-        <AspectRatio ratio={1.7} my={4}>
-          <MatrixRain />
-        </AspectRatio>
-
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
             Work
@@ -77,38 +66,7 @@ const Home = () => (
             music.
           </Paragraph>
         </Section>
-        <Box
-          display={{ md: 'flex' }}
-          align="right"
-          borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
-          borderRadius="lg"
-          borderWidth={2}
-          borderStyle="solid"
-          mb={6}
-          p={3}
-          textAlign="center"
-          bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-          css={{ backdropFilter: 'blur(7px)' }}
-        >
-          <Heading as="h5" variant="caption">
-            <Heading>&#128152;</Heading>
-            Hip Hop Art &amp; Rap Music
-          </Heading>
-          <br />
-          <List ml={4} my={4}>
-            <ListItem>
-              <Meta>Blogpost</Meta>
-              <Link
-                href="https://aite-artistadelhiphop.blogspot.com/2024/04/cantante-de-rap-profesional-tech.html"
-                target="_blank"
-              >
-                De Las Calles Al Data Center <br />
-                Una Odisea Desde El Hip Hop Hasta La Ingenier&iacute;a De Datos{' '}
-                <ExternalLinkIcon mx="2px" />
-              </Link>
-            </ListItem>
-          </List>
-        </Box>
+        
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
             Bio
