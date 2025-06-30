@@ -5,7 +5,6 @@ import {
   Link,
   Stack,
   useColorModeValue,
-  Heading,
   Menu,
   MenuButton,
   MenuItem,
@@ -53,7 +52,7 @@ const Navbar = props => {
         align="center"
         display="flex"
         justify="space-between"
-        marginTop={1}
+        marginTop={2}
         maxW="container.md"
         wrap="wrap"
       >

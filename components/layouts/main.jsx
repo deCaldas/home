@@ -15,11 +15,11 @@ import Footer from '../footer'
  * @param {object} props.router - El objeto de router proporcionado por Next.js.
  * @returns {JSX.Element} - El componente principal renderizado.
  */
-const Main = ({ children, router }) => {
+const LayoutMain = ({ children }) => {
   const { onOpen } = useDisclosure()
   
   return (
-    <div>
+    <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Diego's Website" />
@@ -47,15 +47,14 @@ const Main = ({ children, router }) => {
         />
         <title>Diego&apos;s Homepage</title>
       </Head>
-      <NavBar path={router.asPath} />
-
+      <NavBar />
       <Container>
         <br />
         {children}
       </Container>
       <Footer onOpen={onOpen} />
-    </div>
+    </>
   )
 }
 
-export default Main
+export default LayoutMain

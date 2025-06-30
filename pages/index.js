@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
+import LayoutMain from '../components/layouts/main'
 import Section from '../components/section'
 import Image from 'next/image'
 import { Meta } from '../components/jobsTemplate'
@@ -23,7 +23,7 @@ const ProfileImage = chakra(Image, {
 })
 
 const Home = () => (
-  <Layout>
+  <LayoutMain>
     <Container marginTop="73px" marginBottom="23px">
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
@@ -128,7 +128,7 @@ const Home = () => (
         </BioSection>
       </Section>
     </Container>
-  </Layout>
+  </LayoutMain>
 )
 
 export default Home

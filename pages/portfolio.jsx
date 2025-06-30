@@ -6,7 +6,7 @@ import {
   Divider,
   useColorModeValue
 } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
+import LayoutMain from '../components/layouts/main'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 /* Imgs */
@@ -15,7 +15,7 @@ import mostlyEntertainment from '../public/images/mostlyEntertainment.png'
 import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops.png'
 
 const Development = () => (
-  <Layout title="portfolio">
+  <LayoutMain title="portfolio">
     <Container mt="73" mb="23">
       <Heading mt="7" as="h3" fontSize={20} mb={4}>
         <Box
@@ -79,7 +79,7 @@ const Development = () => (
         </Section>
       </SimpleGrid>
     </Container>
-  </Layout>
+  </LayoutMain>
 )
 
 export default Development

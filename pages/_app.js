@@ -1,6 +1,6 @@
-import Layout from '../components/layouts/main'
-import Fonts from '../components/fonts'
+import { ColorModeScript } from '@chakra-ui/react'
 import Chakra from '../components/chakra'
+import theme from '../components/layouts/theme'
 
 // Restaurar el scroll manualmente cuando sea aplicable
 if (typeof window !== 'undefined') {
@@ -28,10 +28,8 @@ function Website({ Component, pageProps, router }) {
 
   return (
     <Chakra cookies={pageProps}>
-      <Fonts />
-      <Layout router={router}>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Component {...pageProps} key={router.route} />
-      </Layout>
     </Chakra>
   )
 }
