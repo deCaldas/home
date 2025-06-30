@@ -6,8 +6,7 @@
     "dev": "next dev --turbopack",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build"
   },
   "keywords": [
     "Homepage",

@@ -45,7 +45,8 @@ const components = {
   }
 }
 
-const fonts = {//TO DO: cuadrar las fuentes
+const fonts = {
+  //TO DO: cuadrar las fuentes
   branding: 'M PLUS Rounded 1c',
   inNavBar: '',
   inBody: ''
