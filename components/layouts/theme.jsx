@@ -36,6 +36,7 @@ const components = {
       }
     }
   },
+
   Link: {
     baseStyle: props => ({
       color: mode('#030e61', '#ffff00')(props),
@@ -44,8 +45,10 @@ const components = {
   }
 }
 
-const fonts = {
-  heading: 'M PLUS Rounded 1c'
+const fonts = {//TO DO: cuadrar las fuentes
+  branding: 'M PLUS Rounded 1c',
+  inNavBar: '',
+  inBody: ''
 }
 
 const colors = {
