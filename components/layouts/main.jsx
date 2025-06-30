@@ -17,7 +17,7 @@ import Footer from '../footer'
  */
 const LayoutMain = ({ children }) => {
   const { onOpen } = useDisclosure()
-  
+
   return (
     <>
       <Head>

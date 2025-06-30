@@ -29,7 +29,7 @@ function Website({ Component, pageProps, router }) {
   return (
     <Chakra cookies={pageProps}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-        <Component {...pageProps} key={router.route} />
+      <Component {...pageProps} key={router.route} />
     </Chakra>
   )
 }

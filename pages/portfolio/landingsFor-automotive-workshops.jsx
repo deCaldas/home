@@ -29,12 +29,19 @@ const Job = () => (
         <Title>
           Landings for Automotive Workshops <Badge>2025-</Badge>
         </Title>
-        <P>To help these businesses increase their online presence and attract potential customers</P>
+        <P>
+          To help these businesses increase their online presence and attract
+          potential customers
+        </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Landings for Automotive Workshops</Meta>
-            <Link href="https://landings-for-automotive-workshops.vercel.app/" target="_blank">
-              https://landings-for-automotive-workshops.vercel.app/ <ExternalLinkIcon mx="2px" />
+            <Link
+              href="https://landings-for-automotive-workshops.vercel.app/"
+              target="_blank"
+            >
+              https://landings-for-automotive-workshops.vercel.app/{' '}
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>

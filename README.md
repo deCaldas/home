@@ -31,7 +31,6 @@ You can create your own homepage for free without notifying me by forking this p
 
 Check out [LICENSE](./LICENSE) for more detail.
 
-
 ## Personal Note
 
 This project was originally cloned from Takuya Matsuyama’s website as a learning exercise. At the time, I was just starting my journey with web development.

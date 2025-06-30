@@ -11,10 +11,10 @@ import {
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/jobsTemplate'
 import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article'
+import LayoutMain from '../../components/layouts/main'
 
 const Job = () => (
-  <Layout title="Web Components">
+  <LayoutMain title="Web Components">
     <Container mt={73}>
       <Box
         borderRadius="lg"
@@ -52,7 +52,7 @@ const Job = () => (
         </AspectRatio>
       </Box>
     </Container>
-  </Layout>
+  </LayoutMain>
 )
 
 export default Job

@@ -11,10 +11,10 @@ import {
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/jobsTemplate'
 import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article'
+import LayoutMain from '../../components/layouts/main'
 
 const Job = () => (
-  <Layout title="Automotive Workshops Blog">
+  <LayoutMain title="Automotive Workshops Blog">
     <Container mt={73}>
       <Box
         borderRadius="lg"
@@ -27,14 +27,25 @@ const Job = () => (
         css={{ backdropFilter: 'blur(3px)' }}
       >
         <Title>
-        Automotive Workshops Blog <Badge>2025-</Badge>
+          Automotive Workshops Blog <Badge>2025-</Badge>
         </Title>
-        <P>Un componente crucial en una <strong>estrategia de SEO</strong>. Al generar contenido fresco y relevante, utilizar palabras clave apropiadas, aumentar los backlinks y optimizar las etiquetas HTML y las imágenes, puedes mejorar significativamente la clasificación del sitio web en los resultados de búsqueda y, en última instancia, aumentar el tráfico y las conversiones</P>
+        <P>
+          Un componente crucial en una <strong>estrategia de SEO</strong>. Al
+          generar contenido fresco y relevante, utilizar palabras clave
+          apropiadas, aumentar los backlinks y optimizar las etiquetas HTML y
+          las imágenes, puedes mejorar significativamente la clasificación del
+          sitio web en los resultados de búsqueda y, en última instancia,
+          aumentar el tráfico y las conversiones
+        </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Automotive Workshops Blog</Meta>
-            <Link href="https://landings-for-automotive-workshops.vercel.app/" target="_blank">
-              https://landings-for-automotive-workshops.vercel.app/ <ExternalLinkIcon mx="2px" />
+            <Link
+              href="https://landings-for-automotive-workshops.vercel.app/"
+              target="_blank"
+            >
+              https://landings-for-automotive-workshops.vercel.app/{' '}
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -52,7 +63,7 @@ const Job = () => (
         </AspectRatio>
       </Box>
     </Container>
-  </Layout>
+  </LayoutMain>
 )
 
 export default Job

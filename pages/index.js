@@ -91,10 +91,10 @@ const Home = () => (
         css={{ backdropFilter: 'blur(7px)' }}
       >
         <Heading as="h5" variant="caption">
-        <Heading>&#128152;</Heading>
+          <Heading>&#128152;</Heading>
           Hip Hop Art &amp; Rap Music
         </Heading>
-        <br />        
+        <br />
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Blogpost</Meta>
