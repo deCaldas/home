@@ -3,10 +3,11 @@
   "version": "2.7.7",
   "description": "Diego's Website",
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
+    "dev": "next dev --turbopack",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "build": "next build"
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [
     "Homepage",

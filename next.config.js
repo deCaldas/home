@@ -4,8 +4,7 @@
 const nextConfig = {
   images: { unoptimized: true },
   pageExtensions: ['js', 'jsx'],
-  output: 'export',
-  basePath: '/home'
+  output: 'export'
 }
 
 module.exports = nextConfig
