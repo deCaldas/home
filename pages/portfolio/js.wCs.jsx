@@ -27,19 +27,19 @@ const Job = () => (
         css={{ backdropFilter: 'blur(3px)' }}
       >
         <Title>
-          Web Components <Badge>2023-</Badge>
+          Web Components Design Systems<Badge>2023-</Badge>
         </Title>
         <P>Like mine.</P>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>Web Components</Meta>
+            <Meta>Home Page</Meta>
             <Link href="https://decaldas.github.io/js.wCs/" target="_blank">
               https://decaldas.github.io/js.wCs/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>JavaScrit, HTML5 y CSS3</span>
+            <span>Web Components of JavaScript</span>
           </ListItem>
         </List>
         <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>

@@ -27,9 +27,9 @@ const Job = () => (
         css={{ backdropFilter: 'blur(3px)' }}
       >
         <Title>
-          Web de Finanzas Personales <Badge>2023-</Badge>
+          Personal Finance Website <Badge>2023-</Badge>
         </Title>
-        <P>Like mine.</P>
+        <P>A minimal chatbot.</P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Home</Meta>

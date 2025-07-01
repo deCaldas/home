@@ -4,8 +4,8 @@ import {
   Link,
   List,
   ListItem,
-  AspectRatio,
   Box,
+  AspectRatio,
   useColorModeValue
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -27,11 +27,15 @@ const Job = () => (
         css={{ backdropFilter: 'blur(3px)' }}
       >
         <Title>
-          Página Web A La Venta <Badge>2023-</Badge>
+          Executive Transport Website <Badge>2023-</Badge>
         </Title>
         <P>
-          This site was made with HTML, CSS, JavaScript and diployed in Surge
-          technology.
+          Developed as part of a real-world training contract.
+          <br />
+          <em>
+            Note: Project was not deployed due to company liquidation, but
+            showcases real-world development and UX design skills.
+          </em>
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -52,7 +56,7 @@ const Job = () => (
         <AspectRatio maxW="640px" height={854} ratio={1.2} my={4}>
           <iframe
             src="https://empresa-de-transporte.surge.sh/"
-            title="executive transportation company website"
+            title="executive transportation website"
             frameBorder="0"
             allowFullScreen
           ></iframe>

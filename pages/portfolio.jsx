@@ -18,9 +18,12 @@ import { Meta } from '../components/jobsTemplate'
 import MatrixRain from '../components/MatrixRain'
 
 /* Imgs */
-import contactNet_Angeliana from '../public/images/contactNet_Angeliana.png'
 import mostlyEntertainment from '../public/images/mostlyEntertainment.png'
 import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops.png'
+import contactNet_Angeliana from '../public/images/contactNet_Angeliana.png'
+import f101bs_branding from '../public/images/f101bs_branding.png'
+import webPageForSale from '../public/images/webPageForSale.png'
+import js_wCs from '../public/images/js_wCs.png'
 
 const Development = () => (
   <LayoutMain title="portfolio">
@@ -35,17 +38,20 @@ const Development = () => (
             p={3}
             textAlign="center"
             bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
-            >
+          >
             {' Hello World! '}
           </Box>
-        </Heading>      
+        </Heading>
 
         <AspectRatio ratio={7}>
           <MatrixRain />
         </AspectRatio>
       </Section>
 
-      <Divider borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')} marginY={7} />
+      <Divider
+        borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+        marginY={7}
+      />
 
       <Section>
         <Heading as="h3" variant="section-title">
@@ -55,12 +61,48 @@ const Development = () => (
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
             <WorkGridItem
+              id="js.wCs"
+              title="Web Components Design Systems"
+              thumbnail={js_wCs}
+            >
+              Built with native Web Components, focused on reusability,
+              accessibility, and performance.
+              {/* An open-source design system built with native Web Components, focused on reusability, accessibility, and performance. Created to contribute to the JavaScript community and promote modern, framework-agnostic UI development. */}
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="forSale"
+              title="Executive Transport Website"
+              thumbnail={webPageForSale}
+            >
+              A full responsive multi-section website for a luxury transport
+              company. Includes modal-based service details, client
+              testimonials, a dynamic carousel, booking calendar, and WhatsApp
+              integration.
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="f101bs"
+              title="Finanzas 101 Bots"
+              thumbnail={f101bs_branding}
+            >
+              Uses a hash table for basic NLP emulation and response mapping,
+              focused on learning AI logic and financial literacy fundamentals.
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.1}>
+            <WorkGridItem
               id="landingsFor-automotive-workshops"
               title="Landings for Automotive Workshop"
               thumbnail={landingsForAutomotiveWorkshops}
-              >
-              This&apos;s self-employment, landing page funnel aimed at automotive
-              workshops
+            >
+              This&apos;s self-employment, landing page funnel aimed at
+              automotive workshops
             </WorkGridItem>
           </Section>
 
@@ -69,7 +111,7 @@ const Development = () => (
               id="mostlyEntertainment"
               title="Mostly Entertainment Home Studio"
               thumbnail={mostlyEntertainment}
-              >
+            >
               Artistic project. The website design is based on the principles of
               simplicity, elegance and ease of use. And multimedia content
               integration to enhance user experience
@@ -88,7 +130,7 @@ const Development = () => (
               id="contactNet_Angeliana"
               title="Angeliana Alvarez Homepage"
               thumbnail={contactNet_Angeliana}
-              >
+            >
               Web page to my friend. This page is made possible by Next.js and
               Chakra UI.
             </WorkGridItem>
@@ -96,7 +138,10 @@ const Development = () => (
         </SimpleGrid>
       </Section>
 
-      <Divider borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')} marginY={7} />
+      <Divider
+        borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+        marginY={7}
+      />
 
       <Box
         display={{ md: 'flex' }}
@@ -130,7 +175,10 @@ const Development = () => (
           </ListItem>
         </List>
       </Box>
-      <Divider borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')} marginY={7} />
+      <Divider
+        borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+        marginY={7}
+      />
     </Container>
   </LayoutMain>
 )
