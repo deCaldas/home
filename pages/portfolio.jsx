@@ -24,6 +24,7 @@ import contactNet_Angeliana from '../public/images/contactNet_Angeliana.png'
 import f101bs_branding from '../public/images/f101bs_branding.png'
 import webPageForSale from '../public/images/webPageForSale.png'
 import js_wCs from '../public/images/js_wCs.png'
+import screenshot_80smusicgallery from '../public/images/screenshot_80smusicgallery.png'
 
 const Development = () => (
   <LayoutMain title="portfolio">
@@ -58,7 +59,17 @@ const Development = () => (
           Projects
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 1]} gap={2}>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="musicgallery"
+              title="80's Music Gallery"
+              thumbnail={screenshot_80smusicgallery}
+            >
+              A dynamic web gallery that allows you to interactively browse, search, and filter songs using JavaScript.
+            </WorkGridItem>
+          </Section>
+
           <Section delay={0.1}>
             <WorkGridItem
               id="js.wCs"
@@ -124,7 +135,7 @@ const Development = () => (
         <Heading as="h3" variant="section-title">
           Networking
         </Heading>
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 1]} gap={2}>
           <Section delay={0.1}>
             <WorkGridItem
               id="contactNet_Angeliana"
