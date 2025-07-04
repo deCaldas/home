@@ -27,16 +27,18 @@ const Job = () => (
         css={{ backdropFilter: 'blur(3px)' }}
       >
         <Title>
-          { "80's Music Gallery" } <Badge>2025-</Badge>
+          {"80's Music Gallery"} <Badge>2025-</Badge>
         </Title>
-        <P>{ "" }</P>
+        <P>{''}</P>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>
-              { "Web App" }
-            </Meta>
-            <Link href="https://music-gallery-website-decaldas-projects.vercel.app/" target="_blank">
-              https://music-gallery-website-decaldas-projects.vercel.app/ <ExternalLinkIcon mx="2px" />
+            <Meta>{'Web App'}</Meta>
+            <Link
+              href="https://music-gallery-website-decaldas-projects.vercel.app/"
+              target="_blank"
+            >
+              https://music-gallery-website-decaldas-projects.vercel.app/{' '}
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>

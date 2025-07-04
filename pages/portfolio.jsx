@@ -66,7 +66,8 @@ const Development = () => (
               title="80's Music Gallery"
               thumbnail={screenshot_80smusicgallery}
             >
-              A dynamic web gallery that allows you to interactively browse, search, and filter songs using JavaScript.
+              A dynamic web gallery that allows you to interactively browse,
+              search, and filter songs using JavaScript.
             </WorkGridItem>
           </Section>
 
