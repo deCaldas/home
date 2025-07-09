@@ -33,8 +33,8 @@ const Job = () => (
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Home Page</Meta>
-            <Link href="https://decaldas.github.io/js.wCs/" target="_blank">
-              https://decaldas.github.io/js.wCs/ <ExternalLinkIcon mx="2px" />
+            <Link href="https://decaldas.github.io/caridad-ui/" target="_blank">
+              https://decaldas.github.io/caridad-ui/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
@@ -44,7 +44,7 @@ const Job = () => (
         </List>
         <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
           <iframe
-            src="https://decaldas.github.io/js.wCs/"
+            src="https://decaldas.github.io/caridad-ui/"
             title="Web Components"
             frameBorder="0"
             allowFullScreen
