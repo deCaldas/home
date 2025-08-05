@@ -14,7 +14,7 @@ import P from '../../components/paragraph'
 import LayoutMain from '../../components/layouts/main'
 
 const Job = () => (
-  <LayoutMain title="Web Components">
+  <LayoutMain title="AiTe TALK">
     <Container mt={73}>
       <Box
         borderRadius="lg"
@@ -27,25 +27,28 @@ const Job = () => (
         css={{ backdropFilter: 'blur(3px)' }}
       >
         <Title>
-          Web Components Design Systems<Badge>2025-</Badge>
+          AiTe TALK – Interactive English Tutor with Voice and GPT-3.5
+           <Badge>2025-</Badge>
         </Title>
-        <P>Web component library for a design system.</P>
+        <P>Innovative SaaS platform that combines voice recognition, speech synthesis, and advanced language models (GPT-3.5-turbo) to create a conversational English tutor. Users can practice pronunciation, grammar, and conversation in real-time, with modes tailored to their level (A1–B2).</P>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>Home Page</Meta>
-            <Link href="https://decaldas.github.io/caridad-ui/" target="_blank">
-              https://decaldas.github.io/caridad-ui/ <ExternalLinkIcon mx="2px" />
+            <Meta>
+              Platform
+            </Meta>
+            <Link href="https://ai-te-talk.vercel.app/" target="_blank">
+              https://ai-te-talk.vercel.app/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>Web Components of JavaScript</span>
+            <span>APIs in production environments, Complex SaaS system (auth, DB, payment), Web Speech API.</span>
           </ListItem>
         </List>
         <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
           <iframe
-            src="https://decaldas.github.io/caridad-ui/"
-            title="Web Components"
+            src="https://ai-te-talk.vercel.app/"
+            title="Title here again"
             frameBorder="0"
             allowFullScreen
           ></iframe>

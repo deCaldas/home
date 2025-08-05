@@ -14,7 +14,7 @@ import P from '../../components/paragraph'
 import LayoutMain from '../../components/layouts/main'
 
 const Job = () => (
-  <LayoutMain title="Automotive Workshops Blog">
+  <LayoutMain title="title here">
     <Container mt={73}>
       <Box
         borderRadius="lg"

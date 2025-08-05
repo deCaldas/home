@@ -23,8 +23,9 @@ import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomoti
 import contactNet_Angeliana from '../public/images/contactNet_Angeliana.png'
 import f101bs_branding from '../public/images/f101bs_branding.png'
 import webPageForSale from '../public/images/webPageForSale.png'
-import js_wCs from '../public/images/js_wCs.png'
+import caridad_ui_npm from '../public/images/caridad_ui_npm.png'
 import screenshot_80smusicgallery from '../public/images/screenshot_80smusicgallery.png'
+import aitetalk from '../public/images/aitetalk.png'
 
 const Development = () => (
   <LayoutMain title="portfolio">
@@ -60,50 +61,13 @@ const Development = () => (
         </Heading>
 
         <SimpleGrid columns={[1, 1, 1]} gap={2}>
-          <Section delay={0.1}>
-            <WorkGridItem
-              id="musicgallery"
-              title="80's Music Gallery"
-              thumbnail={screenshot_80smusicgallery}
-            >
-              A dynamic web gallery that allows you to interactively browse,
-              search, and filter songs using JavaScript.
-            </WorkGridItem>
-          </Section>
 
           <Section delay={0.1}>
             <WorkGridItem
-              id="js.wCs"
-              title="Web Components Design Systems"
-              thumbnail={js_wCs}
-            >
-              Built with native Web Components, focused on reusability,
-              accessibility, and performance.
-              {/* An open-source design system built with native Web Components, focused on reusability, accessibility, and performance. Created to contribute to the JavaScript community and promote modern, framework-agnostic UI development. */}
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.1}>
-            <WorkGridItem
-              id="forSale"
-              title="Executive Transport Website"
-              thumbnail={webPageForSale}
-            >
-              A full responsive multi-section website for a luxury transport
-              company. Includes modal-based service details, client
-              testimonials, a dynamic carousel, booking calendar, and WhatsApp
-              integration.
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.1}>
-            <WorkGridItem
-              id="f101bs"
-              title="Finanzas 101 Bots"
-              thumbnail={f101bs_branding}
-            >
-              Uses a hash table for basic NLP emulation and response mapping,
-              focused on learning AI logic and financial literacy fundamentals.
+              id="aitetalk"
+              title="AiTe TALK"
+              thumbnail={aitetalk}>
+              AI-powered conversational tutor for learning English, built with React and OpenAI API. Ideal project for english learners looking to practice realistic conversations without pressure.
             </WorkGridItem>
           </Section>
 
@@ -129,6 +93,54 @@ const Development = () => (
               integration to enhance user experience
             </WorkGridItem>
           </Section>
+
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="musicgallery"
+              title="80's Music Gallery"
+              thumbnail={screenshot_80smusicgallery}
+            >
+              A dynamic web gallery that allows you to interactively browse,
+              search, and filter songs using JavaScript.
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="forSale"
+              title="Executive Transport Website"
+              thumbnail={webPageForSale}
+            >
+              A full responsive multi-section website for a luxury transport
+              company. Includes modal-based service details, client
+              testimonials, a dynamic carousel, booking calendar, and WhatsApp
+              integration.
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="js.wCs"
+              title="Web Components Design Systems"
+              thumbnail={caridad_ui_npm}
+            >
+              Built with native Web Components, focused on reusability,
+              accessibility, and performance.
+              {/* An open-source design system built with native Web Components, focused on reusability, accessibility, and performance. Created to contribute to the JavaScript community and promote modern, framework-agnostic UI development. */}
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="f101bs"
+              title="Finanzas 101 Bots"
+              thumbnail={f101bs_branding}
+            >
+              Uses a hash table for basic NLP emulation and response mapping,
+              focused on learning AI logic and financial literacy fundamentals.
+            </WorkGridItem>
+          </Section>
+
         </SimpleGrid>
       </Section>
 
