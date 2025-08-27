@@ -26,6 +26,7 @@ import webPageForSale from '../public/images/webPageForSale.png'
 import caridad_ui_npm from '../public/images/caridad_ui_npm.png'
 import screenshot_80smusicgallery from '../public/images/screenshot_80smusicgallery.png'
 import aitetalk from '../public/images/aitetalk.png'
+import lawyerslanding from '../public/images/lawyerslanding.png'
 
 const Development = () => (
   <LayoutMain title="portfolio">
@@ -61,6 +62,15 @@ const Development = () => (
         </Heading>
 
         <SimpleGrid columns={[1, 1, 1]} gap={2}>
+
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="legalwebsite"
+              title="Webs para Firmas Legales"
+              thumbnail={lawyerslanding}>
+              Landing page for selling web plans to lawyers and law firms.
+            </WorkGridItem>
+          </Section>          
 
           <Section delay={0.1}>
             <WorkGridItem
