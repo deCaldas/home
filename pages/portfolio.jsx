@@ -27,6 +27,7 @@ import caridad_ui_npm from '../public/images/caridad_ui_npm.png'
 import screenshot_80smusicgallery from '../public/images/screenshot_80smusicgallery.png'
 import aitetalk from '../public/images/aitetalk.png'
 import lawyerslanding from '../public/images/lawyerslanding.png'
+import tupaginawebscreenshot from '../public/images/tupaginawebscreenshot.png'
 
 const Development = () => (
   <LayoutMain title="portfolio">
@@ -62,22 +63,31 @@ const Development = () => (
         </Heading>
 
         <SimpleGrid columns={[1, 1, 1]} gap={2}>
-
           <Section delay={0.1}>
             <WorkGridItem
               id="legalwebsite"
               title="Webs para Firmas Legales"
-              thumbnail={lawyerslanding}>
+              thumbnail={lawyerslanding}
+            >
               Landing page for selling web plans to lawyers and law firms.
             </WorkGridItem>
-          </Section>          
+          </Section>
 
           <Section delay={0.1}>
             <WorkGridItem
-              id="aitetalk"
-              title="AiTe TALK"
-              thumbnail={aitetalk}>
-              AI-powered conversational tutor for learning English, built with React and OpenAI API. Ideal project for english learners looking to practice realistic conversations without pressure.
+              id="tupaginaweb"
+              title="Tu Página Web en 7 Días"
+              thumbnail={tupaginawebscreenshot}
+            >
+              Landing page for selling web services.
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.1}>
+            <WorkGridItem id="aitetalk" title="AiTe TALK" thumbnail={aitetalk}>
+              AI-powered conversational tutor for learning English, built with
+              React and OpenAI API. Ideal project for english learners looking
+              to practice realistic conversations without pressure.
             </WorkGridItem>
           </Section>
 
@@ -150,7 +160,6 @@ const Development = () => (
               focused on learning AI logic and financial literacy fundamentals.
             </WorkGridItem>
           </Section>
-
         </SimpleGrid>
       </Section>
 

@@ -41,7 +41,7 @@ const Job = () => (
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>EXEMPLO: JavaScrit, HTML5 y CSS3</span>
+            <span>EXEMPLO: JavaScript, HTML5 y CSS3</span>
           </ListItem>
         </List>
         <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>

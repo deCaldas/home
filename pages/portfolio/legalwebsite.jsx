@@ -29,14 +29,19 @@ const Job = () => (
         <Title>
           Webs para Firmas Legales <Badge>2025-</Badge>
         </Title>
-        <P>Value proposition for designing and creating websites that generate clientele.</P>
+        <P>
+          Value proposition for designing and creating websites that generate
+          clientele.
+        </P>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>
-              Website
-            </Meta>
-            <Link href="https://decaldas.github.io/legalwebsite/" target="_blank">
-              https://decaldas.github.io/legalwebsite/ <ExternalLinkIcon mx="2px" />
+            <Meta>Website</Meta>
+            <Link
+              href="https://decaldas.github.io/legalwebsite/"
+              target="_blank"
+            >
+              https://decaldas.github.io/legalwebsite/{' '}
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
