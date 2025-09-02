@@ -30,13 +30,14 @@ const Job = () => (
           Web Developer <Badge>2025-</Badge>
         </Title>
         <P>
-          <strong>Full Stack Developer with JavaScript</strong> certification from Platzi, a training program covering everything from language fundamentals and client-side development to building robust servers and efficient databases.
+          <strong>Full Stack Developer with JavaScript</strong> certification
+          from Platzi, a training program covering everything from language
+          fundamentals and client-side development to building robust servers
+          and efficient databases.
         </P>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>
-              Diploma - Platzi
-            </Meta>
+            <Meta>Diploma - Platzi</Meta>
             <Link href="https://platzi.com/@d-caldasCaridad" target="_blank">
               https://platzi.com/@d-caldasCaridad <ExternalLinkIcon mx="2px" />
             </Link>
@@ -46,7 +47,7 @@ const Job = () => (
             <span>JavaScript, HTML5 and CSS3</span>
           </ListItem>
         </List>
-{/*         <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
+        {/*         <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
           <iframe
             src="https://platzi.com/@d-caldasCaridad"
             title="Full Stack Developer with JavaScript"

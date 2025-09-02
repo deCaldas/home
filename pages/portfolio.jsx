@@ -192,12 +192,12 @@ const Development = () => (
               id="javascriptdeveloper"
               title="JavaScript Developer"
               thumbnail={javascript_developer}
-              >
+            >
               First project as a web developer was certification.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
-      </Section>            
+      </Section>
 
       <Divider
         borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
