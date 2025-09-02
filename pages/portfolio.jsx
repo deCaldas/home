@@ -28,6 +28,7 @@ import screenshot_80smusicgallery from '../public/images/screenshot_80smusicgall
 import aitetalk from '../public/images/aitetalk.png'
 import lawyerslanding from '../public/images/lawyerslanding.png'
 import tupaginawebscreenshot from '../public/images/tupaginawebscreenshot.png'
+import javascript_developer from '../public/images/javascript_developer.jpg'
 
 const Development = () => (
   <LayoutMain title="portfolio">
@@ -180,6 +181,23 @@ const Development = () => (
           </Section>
         </SimpleGrid>
       </Section>
+
+      <Section>
+        <Heading as="h3" variant="section-title">
+          Certification
+        </Heading>
+        <SimpleGrid columns={[1, 1, 1]} gap={2}>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="javascriptdeveloper"
+              title="JavaScript Developer"
+              thumbnail={javascript_developer}
+              >
+              First project as a web developer was certification.
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+      </Section>            
 
       <Divider
         borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
