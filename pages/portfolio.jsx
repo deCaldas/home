@@ -151,6 +151,8 @@ const Development = () => (
             </WorkGridItem>
           </Section>
 
+          {/* Comentada hasta que pueda desplegar el nuevo sitio en Heroku que necesita el pago de $1 USD
+
           <Section delay={0.1}>
             <WorkGridItem
               id="f101bs"
@@ -161,8 +163,9 @@ const Development = () => (
               focused on learning AI logic and financial literacy fundamentals.
             </WorkGridItem>
           </Section>
-        </SimpleGrid>
-      </Section>
+          */}
+          </SimpleGrid>
+        </Section> 
 
       <Section>
         <Heading as="h3" variant="section-title">
