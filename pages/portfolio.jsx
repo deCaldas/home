@@ -18,17 +18,17 @@ import { Meta } from '../components/jobsTemplate'
 import MatrixRain from '../components/MatrixRain'
 
 /* Imgs */
-import mostlyEntertainment from '../public/images/mostlyEntertainment.png'
-import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops.png'
-import contactNet_Angeliana from '../public/images/contactNet_Angeliana.png'
-import f101bs_branding from '../public/images/f101bs_branding.png'
-import webPageForSale from '../public/images/webPageForSale.png'
-import caridad_ui_npm from '../public/images/caridad_ui_npm.png'
-import screenshot_80smusicgallery from '../public/images/screenshot_80smusicgallery.png'
-import aitetalk from '../public/images/aitetalk.png'
-import lawyerslanding from '../public/images/lawyerslanding.png'
-import tupaginawebscreenshot from '../public/images/tupaginawebscreenshot.png'
-import javascript_developer from '../public/images/javascript_developer.jpg'
+import mostlyEntertainment from '../public/images/mostlyEntertainment.webp'
+import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops.webp'
+import contactNet_Angeliana from '../public/images/contactNet_Angeliana.webp'
+import f101bs_branding from '../public/images/f101bs_branding.webp'
+import webPageForSale from '../public/images/webPageForSale.webp'
+import caridad_ui_npm from '../public/images/caridad_ui_npm.webp'
+import screenshot_80smusicgallery from '../public/images/screenshot_80smusicgallery.webp'
+import aitetalk from '../public/images/aitetalk.webp'
+import lawyerslanding from '../public/images/lawyerslanding.webp'
+import tupaginawebscreenshot from '../public/images/tupaginawebscreenshot.webp'
+import javascript_developer from '../public/images/javascript_developer.webp'
 
 const Development = () => (
   <LayoutMain title="portfolio">
