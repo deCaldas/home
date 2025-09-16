@@ -26,7 +26,7 @@ const Branding = () => {
           De Caldas
         </Text>
       </BrandingBox>
-      <Paragraph>[Web Development]</Paragraph>
+      <Paragraph>[Web Studio]</Paragraph>
     </Link>
   )
 }
