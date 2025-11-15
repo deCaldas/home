@@ -30,7 +30,9 @@ const ProfileImage = chakra(Image, {
 })
 
 const Home = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  // Estados separados para cada modal
+  const { isOpen: isOpenSena, onOpen: onOpenSena, onClose: onCloseSena } = useDisclosure()
+  const { isOpen: isOpenPlatzi, onOpen: onOpenPlatzi, onClose: onClosePlatzi } = useDisclosure()
 
   return (
     <LayoutMain>
@@ -101,19 +103,21 @@ const Home = () => {
             He completed the {''}  
             
               <Link 
-                onClick={onOpen} 
+                onClick={onOpenSena} 
                 cursor="pointer" 
                 color="blue.500"
               >
-                Research Seed Program at the CTM SENA Calatrava, Itag&uuml;&iacute;.
+                Research Seed Program
               </Link>
+              {''} at the CTM SENA Calatrava, Itag&uuml;&iacute;.
             
+            {/* Modal para SENA */}
             <Modal
-            isOpen={isOpen}
-            onClose={onClose}
-            isCentered
-            size="lg"
-            motionPreset="scale"
+              isOpen={isOpenSena}
+              onClose={onCloseSena}
+              isCentered
+              size="lg"
+              motionPreset="scale"
             >
               <ModalOverlay />
               <ModalContent>
@@ -151,19 +155,21 @@ const Home = () => {
             <BioYear>2023</BioYear>
             Also certificated as {''}
             <Link 
-                onClick={onOpen} 
+                onClick={onOpenPlatzi} 
                 cursor="pointer" 
                 color="blue.500"
               >
                 Full Stack Developer with JavaScript
               </Link>
               {''} by Platzi (online education platform).
+            
+            {/* Modal para Platzi */}
             <Modal
-            isOpen={isOpen}
-            onClose={onClose}
-            isCentered
-            size="lg"
-            motionPreset="scale"
+              isOpen={isOpenPlatzi}
+              onClose={onClosePlatzi}
+              isCentered
+              size="lg"
+              motionPreset="scale"
             >
               <ModalOverlay />
               <ModalContent>
