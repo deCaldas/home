@@ -20,20 +20,19 @@ import MatrixRain from '../components/MatrixRain'
 /* Imgs */
 import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops.webp'
 import contactNet_Angeliana from '../public/images/contactNet_Angeliana.webp'
-import f101bs_branding from '../public/images/f101bs_branding.webp'
 import webPageForSale from '../public/images/webPageForSale.webp'
 import caridad_ui_npm from '../public/images/caridad_ui_npm.webp'
 import screenshot_80smusicgallery from '../public/images/screenshot_80smusicgallery.webp'
 import aitetalk from '../public/images/aitetalk.webp'
 import lawyerslanding from '../public/images/lawyerslanding.webp'
 import tupaginawebscreenshot from '../public/images/tupaginawebscreenshot.webp'
-import javascript_developer from '../public/images/javascript_developer.webp'
+
 
 const Development = () => (
   <LayoutMain title="portfolio">
     <Container mt="73" mb="23">
       <Section>
-        <Heading mt="7" as="h3" fontSize={20} mb={4}>
+        <Heading mt="7" as="h2" fontSize={27} mb={4}>
           <Box
             borderRadius="lg"
             borderWidth={2}
@@ -58,7 +57,7 @@ const Development = () => (
       />
 
       <Section>
-        <Heading as="h3" variant="section-title">
+        <Heading as="h5" variant="section-title">
           Projects
         </Heading>
 
@@ -168,29 +167,11 @@ const Development = () => (
             </WorkGridItem>
           </Section>
 
-          <Divider
-            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
-            marginY={7}
-          />
-
-          {/* Comentada hasta que pueda desplegar el nuevo sitio en Heroku que necesita el pago de $1 USD
-
-          <Section delay={0.1}>
-            <WorkGridItem
-              id="f101bs"
-              title="Finanzas 101 Bots"
-              thumbnail={f101bs_branding}
-            >
-              Uses a hash table for basic NLP emulation and response mapping,
-              focused on learning AI logic and financial literacy fundamentals.
-            </WorkGridItem>
-          </Section>
-          */}
           </SimpleGrid>
         </Section> 
 
       <Section>
-        <Heading as="h3" variant="section-title">
+        <Heading as="h5" variant="section-title">
           Networking
         </Heading>
         <SimpleGrid columns={[1, 1, 1]} gap={2}>
@@ -212,9 +193,9 @@ const Development = () => (
         marginY={7}
       />
 
-      <Heading as="h3" variant="section-title">
-          Passions
-        </Heading>
+      <Heading as="h5" variant="section-title">
+        Passions
+      </Heading>
 
       <Box
         display={{ md: 'flex' }}
@@ -229,8 +210,8 @@ const Development = () => (
         bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
         css={{ backdropFilter: 'blur(7px)' }}
       >
-        <Heading as="h5" variant="caption">
-          <Heading>&#128152;</Heading>
+        <Heading as="h2" variant="caption">
+          <span role="img" aria-label="heart-emoji" style={{ fontSize: '200%' }}>&#128152;</span> 
           Hip Hop Art &amp; Rap Music
         </Heading>
         <br />
