@@ -167,7 +167,7 @@ const Home = () => {
             >
               <ModalOverlay />
               <ModalContent>
-                <ModalHeader>Ejecución de Proyectos Investigativos</ModalHeader>
+                <ModalHeader>Full Stack Developer with JavaScript</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                   <Stack>
