@@ -18,7 +18,6 @@ import { Meta } from '../components/jobsTemplate'
 import MatrixRain from '../components/MatrixRain'
 
 /* Imgs */
-import mostlyEntertainment from '../public/images/mostlyEntertainment.webp'
 import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops.webp'
 import contactNet_Angeliana from '../public/images/contactNet_Angeliana.webp'
 import f101bs_branding from '../public/images/f101bs_branding.webp'
@@ -74,6 +73,11 @@ const Development = () => (
             </WorkGridItem>
           </Section>
 
+          <Divider
+            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+            marginY={7}
+          />
+
           <Section delay={0.1}>
             <WorkGridItem
               id="tupaginaweb"
@@ -84,6 +88,11 @@ const Development = () => (
             </WorkGridItem>
           </Section>
 
+          <Divider
+          borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+          marginY={7}
+          />
+
           <Section delay={0.1}>
             <WorkGridItem id="aitetalk" title="AiTe TALK" thumbnail={aitetalk}>
               AI-powered conversational tutor for learning English, built with
@@ -91,6 +100,11 @@ const Development = () => (
               to practice realistic conversations without pressure.
             </WorkGridItem>
           </Section>
+
+          <Divider
+            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+            marginY={7}
+          />
 
           <Section delay={0.1}>
             <WorkGridItem
@@ -103,17 +117,10 @@ const Development = () => (
             </WorkGridItem>
           </Section>
 
-          <Section delay={0.1}>
-            <WorkGridItem
-              id="mostlyEntertainment"
-              title="Mostly Entertainment Home Studio"
-              thumbnail={mostlyEntertainment}
-            >
-              Artistic project. The website design is based on the principles of
-              simplicity, elegance and ease of use. And multimedia content
-              integration to enhance user experience
-            </WorkGridItem>
-          </Section>
+          <Divider
+            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+            marginY={7}
+          />
 
           <Section delay={0.1}>
             <WorkGridItem
@@ -125,6 +132,11 @@ const Development = () => (
               search, and filter songs using JavaScript.
             </WorkGridItem>
           </Section>
+
+          <Divider
+            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+            marginY={7}
+          />
 
           <Section delay={0.1}>
             <WorkGridItem
@@ -139,6 +151,11 @@ const Development = () => (
             </WorkGridItem>
           </Section>
 
+          <Divider
+            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+            marginY={7}
+          />
+
           <Section delay={0.1}>
             <WorkGridItem
               id="js.wCs"
@@ -150,6 +167,11 @@ const Development = () => (
               {/* An open-source design system built with native Web Components, focused on reusability, accessibility, and performance. Created to contribute to the JavaScript community and promote modern, framework-agnostic UI development. */}
             </WorkGridItem>
           </Section>
+
+          <Divider
+            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+            marginY={7}
+          />
 
           {/* Comentada hasta que pueda desplegar el nuevo sitio en Heroku que necesita el pago de $1 USD
 
@@ -185,27 +207,14 @@ const Development = () => (
         </SimpleGrid>
       </Section>
 
-      <Section>
-        <Heading as="h3" variant="section-title">
-          Certification
-        </Heading>
-        <SimpleGrid columns={[1, 1, 1]} gap={2}>
-          <Section delay={0.1}>
-            <WorkGridItem
-              id="javascriptdeveloper"
-              title="JavaScript Developer"
-              thumbnail={javascript_developer}
-            >
-              First project as a web developer was certification.
-            </WorkGridItem>
-          </Section>
-        </SimpleGrid>
-      </Section>
-
       <Divider
         borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
         marginY={7}
       />
+
+      <Heading as="h3" variant="section-title">
+          Passions
+        </Heading>
 
       <Box
         display={{ md: 'flex' }}
