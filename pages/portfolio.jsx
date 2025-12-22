@@ -27,7 +27,6 @@ import aitetalk from '../public/images/aitetalk.webp'
 import lawyerslanding from '../public/images/lawyerslanding.webp'
 import tupaginawebscreenshot from '../public/images/tupaginawebscreenshot.webp'
 
-
 const Development = () => (
   <LayoutMain title="portfolio">
     <Container mt="73" mb="23">
@@ -147,7 +146,6 @@ const Development = () => (
               search, and filter songs using JavaScript.
             </WorkGridItem>
           </Section>
-
         </SimpleGrid>
       </Section>
 
@@ -192,7 +190,13 @@ const Development = () => (
         css={{ backdropFilter: 'blur(7px)' }}
       >
         <Heading as="h2" variant="caption">
-          <span role="img" aria-label="heart-emoji" style={{ fontSize: '200%' }}>&#128152;</span>
+          <span
+            role="img"
+            aria-label="heart-emoji"
+            style={{ fontSize: '200%' }}
+          >
+            &#128152;
+          </span>
           Hip Hop Art &amp; Rap Music
         </Heading>
         <br />

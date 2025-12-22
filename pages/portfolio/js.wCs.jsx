@@ -34,8 +34,7 @@ const Job = () => (
           <ListItem>
             <Meta>Home Page</Meta>
             <Link href="https://caridad-ui.js.org/" target="_blank">
-              https://caridad-ui.js.org/{' '}
-              <ExternalLinkIcon mx="2px" />
+              https://caridad-ui.js.org/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>

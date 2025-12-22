@@ -31,8 +31,16 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => {
   // Estados separados para cada modal
-  const { isOpen: isOpenSena, onOpen: onOpenSena, onClose: onCloseSena } = useDisclosure()
-  const { isOpen: isOpenPlatzi, onOpen: onOpenPlatzi, onClose: onClosePlatzi } = useDisclosure()
+  const {
+    isOpen: isOpenSena,
+    onOpen: onOpenSena,
+    onClose: onCloseSena
+  } = useDisclosure()
+  const {
+    isOpen: isOpenPlatzi,
+    onOpen: onOpenPlatzi,
+    onClose: onClosePlatzi
+  } = useDisclosure()
 
   return (
     <LayoutMain>
@@ -54,7 +62,10 @@ const Home = () => {
           >
             <Box
               margin="3px"
-              borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
+              borderColor={useColorModeValue(
+                'blackAlpha.900',
+                'whiteAlpha.900'
+              )}
               borderWidth={2}
               borderStyle="solid"
               w="auto"
@@ -79,12 +90,16 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph>
-            Let me introduce an exceptional web developer. If you are looking for
-            a valuable asset to any team in web development, you should check him
-            out. {''}
-            <Link href="https://decaldas.github.io/mostly-entertainment/" target="_blank">
-              Outside of work, he enjoys recording and singing songs of rap music.
-            <ExternalLinkIcon mx="2px" />
+            Let me introduce an exceptional web developer. If you are looking
+            for a valuable asset to any team in web development, you should
+            check him out. {''}
+            <Link
+              href="https://decaldas.github.io/mostly-entertainment/"
+              target="_blank"
+            >
+              Outside of work, he enjoys recording and singing songs of rap
+              music.
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </Paragraph>
         </Section>
@@ -100,17 +115,11 @@ const Home = () => {
 
           <BioSection>
             <BioYear>2011</BioYear>
-            He completed the {''}  
-            
-              <Link 
-                onClick={onOpenSena} 
-                cursor="pointer" 
-                color="blue.500"
-              >
-                Research Seed Program
-              </Link>
-              {''} at the CTM SENA Calatrava, Itag&uuml;&iacute;.
-            
+            He completed the {''}
+            <Link onClick={onOpenSena} cursor="pointer" color="blue.500">
+              Research Seed Program
+            </Link>
+            {''} at the CTM SENA Calatrava, Itag&uuml;&iacute;.
             {/* Modal para SENA */}
             <Modal
               isOpen={isOpenSena}
@@ -125,10 +134,10 @@ const Home = () => {
                 <ModalCloseButton />
                 <ModalBody>
                   <Stack>
-                    <Box 
-                      position="relative" 
-                      width="100%" 
-                      height="300px" 
+                    <Box
+                      position="relative"
+                      width="100%"
+                      height="300px"
                       mb={4}
                       borderRadius="md"
                       overflow="hidden"
@@ -154,15 +163,10 @@ const Home = () => {
           <BioSection>
             <BioYear>2023</BioYear>
             Also certificated as {''}
-            <Link 
-                onClick={onOpenPlatzi} 
-                cursor="pointer" 
-                color="blue.500"
-              >
-                Full Stack Developer with JavaScript
-              </Link>
-              {''} by Platzi (online education platform).
-            
+            <Link onClick={onOpenPlatzi} cursor="pointer" color="blue.500">
+              Full Stack Developer with JavaScript
+            </Link>
+            {''} by Platzi (online education platform).
             {/* Modal para Platzi */}
             <Modal
               isOpen={isOpenPlatzi}
@@ -177,10 +181,10 @@ const Home = () => {
                 <ModalCloseButton />
                 <ModalBody>
                   <Stack>
-                    <Box 
-                      position="relative" 
-                      width="100%" 
-                      height="300px" 
+                    <Box
+                      position="relative"
+                      width="100%"
+                      height="300px"
                       mb={4}
                       borderRadius="md"
                       overflow="hidden"
