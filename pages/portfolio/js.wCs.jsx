@@ -14,7 +14,7 @@ import P from '../../components/paragraph'
 import LayoutMain from '../../components/layouts/main'
 
 const Job = () => (
-  <LayoutMain title="Web Components">
+  <LayoutMain title="Caridad UI - Design Systems from Web Components">
     <Container mt={73}>
       <Box
         borderRadius="lg"
@@ -27,27 +27,26 @@ const Job = () => (
         css={{ backdropFilter: 'blur(3px)' }}
       >
         <Title>
-          Web Components Design Systems<Badge>2025-</Badge>
+          Caridad UI<Badge>2025-</Badge>
         </Title>
-        <P>Web component library for a design system.</P>
+        <P>Design Systems from Web Components.</P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Home Page</Meta>
-            <Link href="https://decaldas.github.io/caridad-ui/" target="_blank">
-              https://decaldas.github.io/caridad-ui/{' '}
+            <Link href="https://caridad-ui.js.org/" target="_blank">
+              https://caridad-ui.js.org/{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>Web Components of JavaScript</span>
+            <span>Custom Elements, Shadow DOM, HTML Templates, ES Modules</span>
           </ListItem>
         </List>
         <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
           <iframe
-            src="https://decaldas.github.io/caridad-ui/"
-            title="Web Components"
-            frameBorder="0"
+            src="https://caridad-ui.js.org/"
+            title="Caridad UI"
             allowFullScreen
           ></iframe>
         </AspectRatio>

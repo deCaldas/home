@@ -61,6 +61,22 @@ const Development = () => (
           Projects
         </Heading>
 
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="js.wCs"
+            title="Caridad UI"
+            thumbnail={caridad_ui_npm}
+          >
+            Built with native Web Components, focused on reusability,
+            accessibility, and performance.
+          </WorkGridItem>
+        </Section>
+
+        <Divider
+          borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+          marginY={7}
+        />
+
         <SimpleGrid columns={[1, 1, 1]} gap={2}>
           <Section delay={0.1}>
             <WorkGridItem
@@ -88,8 +104,8 @@ const Development = () => (
           </Section>
 
           <Divider
-          borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
-          marginY={7}
+            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+            marginY={7}
           />
 
           <Section delay={0.1}>
@@ -132,43 +148,8 @@ const Development = () => (
             </WorkGridItem>
           </Section>
 
-          <Divider
-            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
-            marginY={7}
-          />
-
-          <Section delay={0.1}>
-            <WorkGridItem
-              id="forSale"
-              title="Executive Transport Website"
-              thumbnail={webPageForSale}
-            >
-              A full responsive multi-section website for a luxury transport
-              company. Includes modal-based service details, client
-              testimonials, a dynamic carousel, booking calendar, and WhatsApp
-              integration.
-            </WorkGridItem>
-          </Section>
-
-          <Divider
-            borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
-            marginY={7}
-          />
-
-          <Section delay={0.1}>
-            <WorkGridItem
-              id="js.wCs"
-              title="Web Components Design Systems"
-              thumbnail={caridad_ui_npm}
-            >
-              Built with native Web Components, focused on reusability,
-              accessibility, and performance.
-              {/* An open-source design system built with native Web Components, focused on reusability, accessibility, and performance. Created to contribute to the JavaScript community and promote modern, framework-agnostic UI development. */}
-            </WorkGridItem>
-          </Section>
-
-          </SimpleGrid>
-        </Section> 
+        </SimpleGrid>
+      </Section>
 
       <Section>
         <Heading as="h5" variant="section-title">
@@ -211,7 +192,7 @@ const Development = () => (
         css={{ backdropFilter: 'blur(7px)' }}
       >
         <Heading as="h2" variant="caption">
-          <span role="img" aria-label="heart-emoji" style={{ fontSize: '200%' }}>&#128152;</span> 
+          <span role="img" aria-label="heart-emoji" style={{ fontSize: '200%' }}>&#128152;</span>
           Hip Hop Art &amp; Rap Music
         </Heading>
         <br />
