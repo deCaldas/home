@@ -21,7 +21,7 @@ import MatrixRain from '../components/MatrixRain'
 import landingsForAutomotiveWorkshops from '../public/images/landingsForAutomotiveWorkshops.webp'
 import contactNet_Angeliana from '../public/images/contactNet_Angeliana.webp'
 import webPageForSale from '../public/images/webPageForSale.webp'
-import caridad_ui_npm from '../public/images/caridad_ui_npm.webp'
+import cover_caridadui from '../public/images/cover_caridadui.webp'
 import screenshot_80smusicgallery from '../public/images/screenshot_80smusicgallery.webp'
 import aitetalk from '../public/images/aitetalk.webp'
 import lawyerslanding from '../public/images/lawyerslanding.webp'
@@ -64,7 +64,7 @@ const Development = () => (
           <WorkGridItem
             id="js.wCs"
             title="Caridad UI"
-            thumbnail={caridad_ui_npm}
+            thumbnail={cover_caridadui}
           >
             Built with native Web Components, focused on reusability,
             accessibility, and performance.
