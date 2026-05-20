@@ -37,10 +37,10 @@ const Job = () => (
           <ListItem>
             <Meta>Website</Meta>
             <Link
-              href="https://decaldas.github.io/legalwebsite/"
+              href="https://web-para-legal-tech.netlify.app/"
               target="_blank"
             >
-              https://decaldas.github.io/legalwebsite/{' '}
+              https://web-para-legal-tech.netlify.app/{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
@@ -51,7 +51,7 @@ const Job = () => (
         </List>
         <AspectRatio maxW="640px" height={854} ratio={1.7} my={4}>
           <iframe
-            src="https://decaldas.github.io/legalwebsite/"
+            src="https://web-para-legal-tech.netlify.app/"
             title="Legal Website"
             frameBorder="0"
             allowFullScreen
