@@ -22,15 +22,13 @@ const LayoutMain = ({ children }) => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Diego's Website" />
-        <meta name="author" content="Takuya Matsuyama" />
-        <meta name="clone-editor" content="Diego Whiskey" />
+        <meta name="description" content="Portfolio of Armando Toro Cárdenas, web developer with solid knowledge of the JavaScript ecosystem." />
         <link
           rel="icon"
           type="url"
           href="https://pbs.twimg.com/media/FlFT-KJWIAADq21?format=webp&name=tiny"
         />
-        <meta name="twitter:title" content="Diego Whiskey" />
+        <meta name="twitter:title" content="Armando Toro Cárdenas" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@d_caldasCaridad" />
         <meta name="twitter:creator" content="@d_caldasCaridad" />
@@ -38,14 +36,14 @@ const LayoutMain = ({ children }) => {
           name="twitter:image"
           content="https://github.com/deCaldas/home/blob/main/pages/opengraph-imalogo.png?raw=true"
         />
-        <meta property="og:site_name" content="Diego Whiskey" />
-        <meta name="og:title" content="Diego Whiskey" />
+        <meta property="og:site_name" content="Armando Toro Cárdenas" />
+        <meta name="og:title" content="Armando Toro Cárdenas" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
           content="https://github.com/deCaldas/home/blob/main/pages/opengraph-imalogo.png?raw=true"
         />
-        <title>Diego&apos;s Homepage</title>
+        <title>Armando&apos;s Homepage</title>
       </Head>
       <NavBar />
       <Container>

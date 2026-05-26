@@ -12,7 +12,8 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  Stack
+  Stack,
+  Divider
 } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -85,12 +86,17 @@ const Home = () => {
           </Box>
         </Box>
 
+        <Divider
+        borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+        marginY={7}
+      />
+
         <Section delay={0.1}>
-          <Heading as="h3" variant="section-title">
-            Work
-          </Heading>
+
+
+
           <Paragraph>
-            Let me introduce an exceptional web developer. If you are looking
+            Introducing an exceptional web developer. If you are looking
             for a valuable asset to any team in web development, you should
             check him out. {''}
             <Link
@@ -212,6 +218,11 @@ const Home = () => {
             Today debuting in the digital world...
           </BioSection>
         </Section>
+
+        <Divider
+        borderColor={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+        marginY={7}
+      />
       </Container>
     </LayoutMain>
   )
